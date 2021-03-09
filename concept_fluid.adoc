@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept_fluid.html
 keywords: network, connection, connectivity, azure netapp files, cloud volumes ontap, Amazon S3, onedrive, on-prem ontap, backup files, kubernetes, bare-metal, aip labels
-summary: FLUID is an orchestration and automation service, integrated with Cloud Manager, that connects your public, private and on-premises cloud infrastructure. FLUID builds the network connectivity from anywhere to anywhere seemlessly by configuring network switches, elastic cross connects and cloud provider networking stacks. FLUID can also automatically build bare-metal kubernetes clusters on any compute hardware (or in virtual machines), ready for NetApp data services and other containers and virtual machine workloads to be deployed. FLUID can replace VMware where virtual machines are required.
+summary: FLUID is an orchestration and automation service, integrated with Cloud Manager, that build network connectivity to connect your public, private and on-premises cloud infrastructures. FLUID builds the network connectivity from anywhere to anywhere seemlessly by configuring network switches, elastic cross connects and cloud provider networking APIs. FLUID can also automatically build bare-metal kubernetes clusters on any compute hardware (or in virtual machines), ready for NetApp data services and other containers and virtual machine workloads to be deployed by users. FLUID can replace VMware where virtual machines are required.
 ---
 
 = Learn about FLUID
@@ -13,7 +13,7 @@ summary: FLUID is an orchestration and automation service, integrated with Cloud
 :imagesdir: ./media/
 
 [.lead]
-FLUID is an orchestration and automation service, integrated with Cloud Manager, that connects your public, private and on-premises cloud infrastructure. FLUID builds the network connectivity from anywhere to anywhere seemlessly by configuring network switches, elastic cross connects and cloud provider networking stacks. FLUID can also automatically build bare-metal kubernetes clusters on any compute hardware (or in virtual machines), ready for NetApp data services and other containers and virtual machine workloads to be deployed. FLUID can replace VMware where virtual machines are required.
+FLUID is an orchestration and automation service, integrated with Cloud Manager, that build network connectivity to connect your public, private and on-premises cloud infrastructures. FLUID builds the network connectivity from anywhere to anywhere seemlessly by configuring network switches, elastic cross connects and cloud provider networking APIs. FLUID can also automatically build bare-metal kubernetes clusters on any compute hardware (or in virtual machines), ready for NetApp data services and other containers and virtual machine workloads to be deployed by users. FLUID can replace VMware where virtual machines are required.
 
 https://fluidhq.io[Learn about the use cases for FLUID^].
 
