@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: concept_cloud_compliance.html
-keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, azure netapp files, cloud volumes ontap, Amazon S3, database, onedrive, on-prem ontap, backup files, aip labels
-summary: Cloud Compliance is a data privacy and compliance service for Cloud Manager that scans your volumes, Amazon S3 buckets, and databases to identify the personal and sensitive data that resides in those files. Using Artificial Intelligence (AI) driven technology, Cloud Compliance helps organizations understand data context and identify sensitive data.
+permalink: concept_fluid.html
+keywords: network, connection, connectivity, azure netapp files, cloud volumes ontap, Amazon S3, onedrive, on-prem ontap, backup files, kubernetes, bare-metal, aip labels
+summary: FLUID is an orchestration and automation service, integrated with Cloud Manager, that connects your public, private and on-premises cloud infrastructure. FLUID builds the network connectivity from anywhere to anywhere seemlessly by configuring network switches, elastic cross connects and cloud provider networking stacks. FLUID can also automatically build bare-metal kubernetes clusters on any compute hardware (or in virtual machines), ready for NetApp data services and other containers and virtual machine workloads to be deployed. FLUID can replace VMware where virtual machines are required.
 ---
 
-= Learn about Cloud Compliance
+= Learn about FLUID
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,9 +13,9 @@ summary: Cloud Compliance is a data privacy and compliance service for Cloud Man
 :imagesdir: ./media/
 
 [.lead]
-Cloud Compliance is a data privacy and compliance service for Cloud Manager that scans your volumes, Amazon S3 buckets, databases, and OneDrive accounts to identify the personal and sensitive data that resides in those files. Using Artificial Intelligence (AI) driven technology, Cloud Compliance helps organizations understand data context and identify sensitive data.
+FLUID is an orchestration and automation service, integrated with Cloud Manager, that connects your public, private and on-premises cloud infrastructure. FLUID builds the network connectivity from anywhere to anywhere seemlessly by configuring network switches, elastic cross connects and cloud provider networking stacks. FLUID can also automatically build bare-metal kubernetes clusters on any compute hardware (or in virtual machines), ready for NetApp data services and other containers and virtual machine workloads to be deployed. FLUID can replace VMware where virtual machines are required.
 
-https://cloud.netapp.com/cloud-compliance[Learn about the use cases for Cloud Compliance^].
+https://fluidhq.io[Learn about the use cases for FLUID^].
 
 == Features
 
