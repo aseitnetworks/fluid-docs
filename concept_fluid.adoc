@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: concept_fluid.html
-keywords: network, connection, connectivity, azure netapp files, cloud volumes ontap, Amazon S3, onedrive, on-prem ontap, backup files, kubernetes, bare-metal, aip labels
-summary: FLUID is an orchestration and automation service, integrated with Cloud Manager, that build network connectivity to connect your public, private and on-premises cloud infrastructures. FLUID builds the network connectivity from anywhere to anywhere seemlessly by configuring network switches, elastic cross connects and cloud provider networking APIs. FLUID can also automatically build bare-metal kubernetes clusters on any compute hardware (or in virtual machines), ready for NetApp data services and other containers and virtual machine workloads to be deployed by users. FLUID can replace VMware where virtual machines are required.
+keywords: network, connection, connectivity, kubernetes, baremetal, bare metal, bare-metal, hybrid cloud, megaport, pccw, console connect, equinix, fabric
+summary: FLUID is an orchestration and automation service, integrated with Cloud Manager, that deploys bare metal kubernetes clusters and provides network connectivity to connect public, private and on-premises cloud infrastructures to create ture hybrid cloud architectures. FLUID builds the network connectivity from anywhere to anywhere seemlessly by configuring network switches, elastic cross connects and cloud provider networking APIs. FLUID can automatically build bare-metal kubernetes clusters on any compute hardware (or in virtual machines), ready for NetApp data services and other containers and virtual machine workloads to be deployed by users. FLUID can replace VMware where virtual machines are required.
 ---
 
 = Learn about FLUID
@@ -72,7 +72,7 @@ Data transfer costs depend on your setup. If the Cloud Compliance instance and d
 
 At a high-level, FLUID works like this:
 
-. You deploy FLUID operating system on network switches and/or compute hardware.
+. You deploy FLUID operating system on network switches and/or compute hardware using downloads ISO files, pre-packaged ONIE installer URL or PXE booting compute nodes connected to switches running FLUID.
 . The devices automatically form a cluster and register themselves with the FLUID cloud service.
 . You obtain a Cloud Adoption Token from the console of any device in the cluster - switch node or compute node.
 . You click *Clusters* tab and use the Cloud Adoption Token to claim your cluster within *FLUID* in Cloud Manager.
