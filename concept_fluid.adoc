@@ -51,7 +51,7 @@ NOTE: A Beta version released in April 2021 allows you to run FLUID free on on p
 
 == Cost
 
-* The cost to use FLUID depends on the number of nodes you have in your deployment. A node is defined as a compute, switch or network function virtualisation (NFV) device. A subscription is required deploy FLUID and connect the deployed clusters to Cloud Manager. See https://cloud.netapp.com/cloud-compliance#pricing[pricing^] for details.
+* The cost to use FLUID depends on the number of nodes you have in your deployment. A node is defined as a compute, switch or network function virtualisation (NFV) device. A subscription is required to deploy FLUID and connect the deployed clusters to Cloud Manager. See https://cloud.netapp.com/cloud-compliance#pricing[pricing^] for details.
 +
 link:task_deploy_cloud_compliance.html#subscribing-to-the-cloud-compliance-service[Learn how to subscribe^].
 +
@@ -59,7 +59,7 @@ link:task_deploy_cloud_compliance.html#subscribing-to-the-cloud-compliance-servi
 
 * Installing FLUID requires deploying the FLUID operating system to compute and network hardware, which is procured by the user. See the <<The Cloud Compliance instance,the type of instance that is deployed for each cloud provider>>.
 
-* FLUID does not require a connector or anything virtual cross connect providers for the control plane. An internet connection is sufficient for the FLUID control plane to connect to the FLUID cloud service and Cloud Manager. See the link:reference_cloud_mgr_reqs.html[type of instance that is deployed for each cloud provider^].
+* FLUID does not require a connector or virtual cross connect providers for the control plane. An internet connection is sufficient for the FLUID control plane to connect to the FLUID cloud service and Cloud Manager. The control plane connection between FLUID cluster, the FLUID cloud services and Cloud Manager is served over HTTPS, and the private data sent between components are secured with end-to-end encryption, which means NetApp and third parties can’t read it. See the link:reference_cloud_mgr_reqs.html[type of instance that is deployed for each cloud provider^].
 
 === EDITED UP UNTIL HERE Data transfer costs
 
@@ -68,14 +68,16 @@ Data transfer costs depend on your setup. If the Cloud Compliance instance and d
 * https://aws.amazon.com/ec2/pricing/on-demand/[AWS: Amazon EC2 Pricing^]
 * https://azure.microsoft.com/en-us/pricing/details/bandwidth/[Microsoft Azure: Bandwidth Pricing Details^]
 
-== How Cloud Compliance works
+== How FLUID works
 
-At a high-level, Cloud Compliance works like this:
+At a high-level, FLUID works like this:
 
-. You deploy an instance of Cloud Compliance in Cloud Manager.
-. You enable it on one or more working environments, databases, or OneDrive accounts.
-. Cloud Compliance scans the data using an AI learning process.
-. You click *Compliance* and use the provided dashboard and reporting tools to help in your compliance efforts.
+. You deploy FLUID operating system on network switches and/or compute hardware.
+. The devices automatically form a cluster and register themselves with the FLUID cloud service.
+. You obtain a Cloud Adoption Token from the console of any device in the cluster - switch node or compute node.
+. You click *Clusters* tab and use the Cloud Adoption Token to claim your cluster within *FLUID* in Cloud Manager.
+. You manage your baremetal kubernetes cluster using your preferred kubernetes management tool by retrieve the *kubeconfig* from within the *Cluster info*
+. Optionally, you configure and build your datacentre and/or cloud connectivity cricutis from the *Network* tab within *FLUID* in Cloud Manager.
 
 == The Cloud Compliance instance
 
