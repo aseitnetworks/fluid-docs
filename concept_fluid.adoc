@@ -19,42 +19,49 @@ https://fluidhq.io[Learn about the use cases for FLUID^].
 
 == Features
 
-Cloud Compliance provides several tools that can help you with your compliance efforts. You can use Cloud Compliance to:
+FLUID provides several tools that can help you with your compliance efforts. You can use FLUID to:
 
-* Identify Personal Identifiable Information (PII)
-* Identify a wide scope of sensitive information as required by GDPR, CCPA, PCI, and HIPAA privacy regulations
-* Respond to Data Subject Access Requests (DSAR)
-* Notify Cloud Manager users through email when files contain certain PII (you define this criteria using link:task_managing_highlights.html#controlling-your-data-using-highlights[highlights^])
+* Simplify the deployment of containers on premises
+* Build a bare metal kubernetes cluster in minutes on any compute hardware
+* Deploy your edge or datacentre network just like the cloud providers do
+* Run infrastructure as code - anywhere
+* Automate the creation of cloud connectivity circuit between on premise and public cloud to create true hybrid clouds
+* Automate the deployment of other NetApp services onto on premise infrastructure
+* Run virtual machine workloads without VMware
+* Create service type=loadbalancer services in your own datacentre
+*** Notify Cloud Manager users through email when files contain certain PII (you define this criteria using link:task_managing_highlights.html#controlling-your-data-using-highlights[highlights^])
 * View and modify link:https://azure.microsoft.com/en-us/services/information-protection/[Azure Information Protection (AIP) labels^] in your files
-* Delete individual files
+* Migrate virtual machines from legacy VMware infrastructure
 
-== Supported working environments and data sources
+== Supported working environments and hardware
 
-Cloud Compliance can scan data from the following types of data sources:
+FLUID can be deployed onto the following hardware, and supports the following virtual cross connect and cloud providers:
 
-* Cloud Volumes ONTAP in AWS
-* Cloud Volumes ONTAP in Azure
-* On-premises ONTAP clusters
-* Azure NetApp Files
-* Amazon S3
-* Databases that reside anywhere (there is no requirement that the database resides in a working environment)
-* OneDrive accounts
+* Mellanox switches
+* Any x86 compute hardware
+* Any virtual compute hardware
+* Console Connect by PCCW Global
+* Megaport
+* Equinix Fabric (formerly Equinix Cloud Exchange)
+* Amazon Web Services (AWS)
+* Azure
+* Google Cloud Platform (GCP)
 
-NOTE: A Beta feature released in January 2021 allows you to run Compliance scans for free on the backup files created from your on-prem ONTAP volumes (created using link:concept_backup_to_cloud.html[Cloud Backup^]). This gives you a choice whether you want to have Cloud Compliance scan your on-prem ONTAP volumes directly, or scan the backup files made from those volumes.
+NOTE: A Beta version released in April 2021 allows you to run FLUID free on on premises hardware (created using link:concept_backup_to_cloud.html[Cloud Backup^]).
 
 == Cost
 
-* The cost to use Cloud Compliance depends on the amount of data that you're scanning. The first 1 TB of data that Cloud Compliance scans in a Cloud Manager workspace is free. This includes all data from all working environments and data sources. A subscription to the AWS or Azure Marketplace is required to continue scanning data after that point. See https://cloud.netapp.com/cloud-compliance#pricing[pricing^] for details.
+* The cost to use FLUID depends on the number of nodes you have in your deployment. A node is defined as a compute, switch or network function virtualisation (NFV) device. A subscription is required deploy FLUID and connect the deployed clusters to Cloud Manager. See https://cloud.netapp.com/cloud-compliance#pricing[pricing^] for details.
 +
 link:task_deploy_cloud_compliance.html#subscribing-to-the-cloud-compliance-service[Learn how to subscribe^].
 +
-*Note:* This subscription is not needed to scan backup files created from your on-prem ONTAP systems.
+*Note:* This subscription is not needed during the Beta version period.
 
-* Installing Cloud Compliance in the cloud requires deploying a cloud instance, which results in charges from the cloud provider where it is deployed. See the <<The Cloud Compliance instance,the type of instance that is deployed for each cloud provider>>. There is no cost if you install Cloud Compliance on an on-premises system.
+* Installing FLUID requires deploying the FLUID operating system to compute and network hardware, which is procured by the user. See the <<The Cloud Compliance instance,the type of instance that is deployed for each cloud provider>>.
 
-* Cloud Compliance requires that you have deployed a Connector. In many cases you already have a Connector because of other storage and services you are using in Cloud Manager. The Connector instance results in charges from the cloud provider where it is deployed. See the link:reference_cloud_mgr_reqs.html[type of instance that is deployed for each cloud provider^].
+* FLUID does not require a connector or anything virtual cross connect providers for the control plane. An internet connection is sufficient for the FLUID control plane to connect to the FLUID cloud service and Cloud Manager. See the link:reference_cloud_mgr_reqs.html[type of instance that is deployed for each cloud provider^].
 
-=== Data transfer costs
+=== EDITED UP UNTIL HERE Data transfer costs
 
 Data transfer costs depend on your setup. If the Cloud Compliance instance and data source are in the same Availability Zone and region, then there are no data transfer costs. But if the data source, such as a Cloud Volumes ONTAP cluster or S3 Bucket, is in a _different_ Availability Zone or region, then you'll be charged by your cloud provider for data transfer costs. See these links for more details:
 
