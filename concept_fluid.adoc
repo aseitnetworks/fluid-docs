@@ -47,11 +47,11 @@ FLUID can be deployed onto the following hardware, and supports the following vi
 * Azure
 * Google Cloud Platform (GCP)
 
-NOTE: A Beta version released in April 2021 allows you to run FLUID free on on premises hardware (created using link:concept_backup_to_cloud.html[Cloud Backup^]).
+NOTE: A Beta version released in April 2021 allows you to run FLUID free on on premises hardware.
 
 == Cost
 
-* The cost to use FLUID depends on the number of nodes you have in your deployment. A node is defined as a compute, switch or network function virtualisation (NFV) device. A subscription is required to deploy FLUID and connect the deployed clusters to Cloud Manager. See https://cloud.netapp.com/cloud-compliance#pricing[pricing^] for details.
+* The cost to use FLUID depends on the number of nodes you have in your deployment. A node is defined as a compute, switch or network function virtualisation (NFV) device. A subscription is required to deploy FLUID and connect the deployed clusters to Cloud Manager. See https://cloud.fluidhq.io/pricing[pricing^] for details.
 +
 link:task_deploy_cloud_compliance.html#subscribing-to-the-cloud-compliance-service[Learn how to subscribe^].
 +
@@ -79,31 +79,25 @@ At a high-level, FLUID works like this:
 . You manage your baremetal kubernetes cluster using your preferred kubernetes management tool by retrieve the *kubeconfig* from within the *Cluster info*
 . Optionally, you configure and build your datacentre and/or cloud connectivity cricutis from the *Network* tab within *FLUID* in Cloud Manager.
 
-== The Cloud Compliance instance
+== The FLUID cluster instance
 
-When you deploy Cloud Compliance in the cloud, Cloud Manager deploys the instance in the same subnet as the Connector. link:concept_connectors.html[Learn more about Connectors.^]
+When you deploy FLUID, the installer deploys the instance in the same subnet as XXXXX. link:concept_connectors.html[Learn more about Connectors.^]
 
-NOTE: If the Connector is installed on-prem, it deploys the Cloud Compliance instance in same VPC or VNet as the first Cloud Volumes ONTAP system in the request.
+NOTE: If the subnetting of the deployment is required to be altered, this can be achieve by XXXXX.
 
 image:diagram_cloud_compliance_instance.png[A diagram that shows a Cloud Manager instance and a Cloud Compliance instance running in your cloud provider.]
 
 Note the following about the instance:
 
-* In Azure, Cloud Compliance runs on a link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series[Standard_D16s_v3 VM] with a 512 GB disk.
+* FLUID initially deploys a single node, single master, Kubernetes cluster to manage the deployment
 
-* In AWS, Cloud Compliance runs on an link:https://aws.amazon.com/ec2/instance-types/m5/[m5.4xlarge instance] with a 500 GB GP2 disk.
-+
-In regions where m5.4xlarge isn't available, Cloud Compliance runs on an m4.4xlarge instance instead.
-+
-NOTE: Changing or resizing the instance/VM type isn't supported. You need to use the size that's provided.
+* FLUID is designed to be deployed on bare-metal hardware outside of a cloud provider. It can however also be deployed in virtualised environments and inside cloud provider if necessary.
 
-* The instance is named _CloudCompliance_ with a generated hash (UUID) concatenated to it. For example: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
+* Additional compute and network nodes can be deployed.... XXXXX
 
-* Only one Cloud Compliance instance is deployed per Connector.
+* Only one FLUID instance is deployed per cluster and only one cluster per FLUID instance. Today, multiple clusters/instances cannot be connected to each other but this feature is coming soon.
 
-* Upgrades of Cloud Compliance software is automated--you don't need to worry about it.
-
-TIP: The instance should remain running at all times because Cloud Compliance continuously scans the data.
+* Upgrades of FLUID software is automated--you don't need to worry about it.
 
 == How scans work
 
