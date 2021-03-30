@@ -30,7 +30,6 @@ FLUID provides several tools that can help you with your compliance efforts. You
 * Run virtual machine workloads without VMware
 * Create service type=loadbalancer services in your own datacentre
 *** Notify Cloud Manager users through email when files contain certain PII (you define this criteria using link:task_managing_highlights.html#controlling-your-data-using-highlights[highlights^])
-* View and modify link:https://azure.microsoft.com/en-us/services/information-protection/[Azure Information Protection (AIP) labels^] in your files
 * Migrate virtual machines from legacy VMware infrastructure
 
 == Supported working environments and hardware
