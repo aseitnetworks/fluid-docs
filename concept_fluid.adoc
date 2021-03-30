@@ -22,14 +22,16 @@ https://fluidhq.io[Learn about the use cases for FLUID^].
 FLUID provides several tools that can help you with your compliance efforts. You can use FLUID to:
 
 * Simplify the deployment of containers on premises
-* Build a bare metal kubernetes cluster in minutes on any compute hardware
+* Build a bare metal Kubernetes cluster in minutes on any compute hardware
 * Deploy your edge or datacentre network just like the cloud providers do
-* Run infrastructure as code - anywhere
+* Run your infrastructure as code - anywhere, including:
+*** networks
+*** virtual machines
+*** Kubernetes cluster
 * Automate the creation of cloud connectivity circuit between on premise and public cloud to create true hybrid clouds
 * Automate the deployment of other NetApp services onto on premise infrastructure
 * Run virtual machine workloads without VMware
 * Create service type=loadbalancer services in your own datacentre
-*** Notify Cloud Manager users through email when files contain certain PII (you define this criteria using link:task_managing_highlights.html#controlling-your-data-using-highlights[highlights^])
 * Migrate virtual machines from legacy VMware infrastructure
 
 == Supported working environments and hardware
