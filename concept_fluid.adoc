@@ -61,13 +61,6 @@ link:task_deploy_cloud_compliance.html#subscribing-to-the-cloud-compliance-servi
 
 * FLUID does not require a connector or virtual cross connect providers for the control plane. An internet connection is sufficient for the FLUID control plane to connect to the FLUID cloud service and Cloud Manager. The control plane connection between FLUID cluster, the FLUID cloud services and Cloud Manager is served over HTTPS, and the private data sent between components are secured with end-to-end encryption, which means NetApp and third parties can’t read it. See the link:reference_cloud_mgr_reqs.html[type of instance that is deployed for each cloud provider^].
 
-=== EDITED UP UNTIL HERE Data transfer costs
-
-Data transfer costs depend on your setup. If the Cloud Compliance instance and data source are in the same Availability Zone and region, then there are no data transfer costs. But if the data source, such as a Cloud Volumes ONTAP cluster or S3 Bucket, is in a _different_ Availability Zone or region, then you'll be charged by your cloud provider for data transfer costs. See these links for more details:
-
-* https://aws.amazon.com/ec2/pricing/on-demand/[AWS: Amazon EC2 Pricing^]
-* https://azure.microsoft.com/en-us/pricing/details/bandwidth/[Microsoft Azure: Bandwidth Pricing Details^]
-
 == How FLUID works
 
 At a high-level, FLUID works like this:
@@ -99,7 +92,7 @@ Note the following about the instance:
 
 * Upgrades of FLUID software is automated--you don't need to worry about it.
 
-== How scans work
+== How cloud connnections work
 
 After you enable Cloud Compliance and select the volumes, buckets, database schemas, or OneDrive users you want to scan, it immediately starts scanning the data to identify personal and sensitive data. It maps your organizational data, categorizes each file, and identifies and extracts entities and predefined patterns in the data. The result of the scan is an index of personal information, sensitive personal information, data categories, and file types.
 
@@ -111,34 +104,17 @@ After the initial scan, Cloud Compliance continuously scans your data to detect 
 
 You can enable and disable scans at the link:task_getting_started_compliance.html#enabling-and-disabling-compliance-scans-on-volumes[volume level^], at the link:task_scanning_s3.html#enabling-and-disabling-compliance-scans-on-s3-buckets[bucket level^], the link:task_scanning_databases.html#enabling-and-disabling-compliance-scans-on-database-schemas[database schema level^], and at the link:task_scanning_onedrive.html#adding-onedrive-users-to-compliance-scans[OneDrive user level^].
 
-== Information that Cloud Compliance indexes
-
-Cloud Compliance collects, indexes, and assigns categories to your data (files). The data that Cloud Compliance indexes includes the following:
-
-Standard metadata:: Cloud Compliance collects standard metadata about files: the file type, its size, creation and modification dates, and so on.
-
-Personal data:: Personally identifiable information such as email addresses, identification numbers, or credit card numbers. link:task_controlling_private_data.html#personal-data[Learn more about personal data^].
-
-Sensitive personal data:: Special types of sensitive information, such as health data, ethnic origin, or political opinions, as defined by GDPR and other privacy regulations. link:task_controlling_private_data.html#sensitive-personal-data[Learn more about sensitive personal data^].
-
-Categories:: Cloud Compliance takes the data that it scanned and divides it into different types of categories. Categories are topics based on AI analysis of the content and metadata of each file. link:task_controlling_private_data.html#categories[Learn more about categories^].
-
-Types:: Cloud Compliance takes the data that it scanned and breaks it down by file type. link:task_controlling_private_data.html#file-types[Learn more about types^].
-
-Name entity recognition::
-Cloud Compliance uses AI to extract natural persons’ names from documents. link:task_responding_to_dsar.html[Learn about responding to Data Subject Access Requests^].
-
 == Networking overview
 
-Cloud Manager deploys the Cloud Compliance instance with a security group that enables inbound HTTP connections from the Connector instance.
+FLUID deploys its own layer 3 network stack to the datacentre/edge network switches and provides automated orchestration of connections to the public clouds and between deployment instances.
 
-When using Cloud Manager in SaaS mode, the connection to Cloud Manager is served over HTTPS, and the private data sent between your browser and the Cloud Compliance instance are secured with end-to-end encryption, which means NetApp and third parties can’t read it.
+In keeping with modern day best practise, layer 2 networking concepts such as spanning tree and VLANs are not part of the FLUID network stack. This ensures that environments behave like a public cloud vendor and can scale easily and quickly as required.
 
-If you need to use the local user interface instead of the SaaS user interface for any reason, you can still link:task_managing_connectors.html#accessing-the-local-ui[access the local UI^].
+Various cloud-like networking features such as the ability to create a load balancer for a service in Kubernetes is included in FLUID as well as Access Control Lists (ACLs) and Network Address Translation (NAT) rules and BGP routing capability.
 
-Outbound rules are completely open. Internet access is needed to install and upgrade the Cloud Compliance software and to send usage metrics.
+Internet access is needed to install and upgrade the FLUID software and to send usage metrics.
 
-If you have strict networking requirements, link:task_deploy_cloud_compliance.html#reviewing-prerequisites[learn about the endpoints that Cloud Compliance contacts^].
+If you have strict networking requirements, link:task_deploy_fluid.html#reviewing-prerequisites[learn about the endpoints that FLUID contacts^].
 
 == User access to compliance information
 
