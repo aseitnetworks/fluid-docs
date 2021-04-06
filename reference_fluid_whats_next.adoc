@@ -1,0 +1,30 @@
+---
+sidebar: sidebar
+permalink: reference_whats_next.html
+keywords: get started, create working environments, manage settings
+summary: Now that you've logged in and set up Cloud Manager, users can start creating and discovering working environments.
+---
+
+= Where to go next
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Now that you've logged in and set up Cloud Manager, users can start creating and discovering working environments.
+
+* link:task_getting_started_aws.html[Get started with Cloud Volumes ONTAP for AWS]
+* link:task_getting_started_azure.html[Get started with Cloud Volumes ONTAP for Azure]
+* link:task_getting_started_gcp.html[Get started with Cloud Volumes ONTAP for Google Cloud]
+* link:task_manage_anf.html[Set up Azure NetApp Files]
+* link:task_manage_cvs_aws.html[Set up Cloud Volumes Service for AWS]
+* link:task_discovering_ontap.html[Discover an on-premises ONTAP cluster]
+* link:task_viewing_amazon_s3.html[Discover your Amazon S3 buckets]
+
+If you're an administrator, you can manage Cloud Manager settings after you create your first Connector.
+
+* link:concept_connectors.html[Learn about Connectors]
+* link:task_installing_https_cert.html[Manage an HTTPS certificate for secure access]
+* link:task_configuring_proxy.html[Configure proxy settings]
