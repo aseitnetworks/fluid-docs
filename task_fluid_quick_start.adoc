@@ -1,18 +1,18 @@
 ---
 sidebar: sidebar
-permalink: task_sync_quick_start.html
+permalink: task_fluid_quick_start.html
 keywords: quick start, overview, deploying, getting started, get started, signing up, free trial
-summary: Getting started with the Cloud Sync service includes a few steps.
+summary: Getting started with the Fluid service includes a few steps.
 ---
 
-= Quick start for Cloud Sync
+= Quick start for Fluid
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-Getting started with the Cloud Sync service includes a few steps.
+Getting started with the Fluid service includes a few steps.
 
 ==== image:number1.png[number 1] Prepare your source and target
 
