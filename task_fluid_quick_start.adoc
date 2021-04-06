@@ -1,0 +1,44 @@
+---
+sidebar: sidebar
+permalink: task_sync_quick_start.html
+keywords: quick start, overview, deploying, getting started, get started, signing up, free trial
+summary: Getting started with the Cloud Sync service includes a few steps.
+---
+
+= Quick start for Cloud Sync
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+Getting started with the Cloud Sync service includes a few steps.
+
+==== image:number1.png[number 1] Prepare your source and target
+
+[role="quick-margin-para"]
+Verify that your source and target are supported and set up. The most important requirement is to verify connectivity between the data broker and the source and target locations. link:reference_sync_requirements.html[Learn more].
+
+==== image:number2.png[number 2] Prepare a location for the NetApp data broker
+
+[role="quick-margin-para"]
+The NetApp data broker software syncs data from a source to a target (this is called a _sync relationship_). You can run the data broker in AWS, Azure, Google Cloud Platform, or on your premises. The data broker needs an outbound internet connection over port 443 so it can communicate with the Cloud Sync service and contact a few other services and repositories. link:reference_sync_networking.html[View the list of endpoints].
+
+[role="quick-margin-para"]
+Cloud Sync guides you through the installation process when you create a sync relationship, at which point you can deploy the data broker in the cloud or download an install script for your own Linux host.
+
+[role="quick-margin-list"]
+* link:task_sync_installing_aws.html[Review AWS installation]
+* link:task_sync_installing_azure.html[Review Azure installation]
+* link:task_sync_installing_gcp.html[Review GCP installation]
+* link:task_sync_installing_linux.html[Review Linux host installation]
+
+==== image:number3.png[number3] Create your first sync relationship
+
+[role="quick-margin-para"]
+Log in to https://cloudmanager.netapp.com/[Cloud Manager^], click *Sync*, and then drag and drop your selections for the source and target. Follow the prompts to complete the setup. link:task_sync_creating_relationships.html[Learn more].
+
+==== image:number4.png[number4] Pay for your sync relationships after your free trial ends
+
+[role="quick-margin-para"]
+Subscribe from AWS or Azure to pay-as-you-go or to pay annually. Or purchase licenses directly from NetApp. Just go to the License Settings page in Cloud Sync to set it up. link:task_sync_licensing.html[Learn more].
