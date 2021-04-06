@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: faq_cloud_compliance.html
-keywords: faq, frequently asked questions, questions, cloud compliance
+permalink: faq_fluid.html
+keywords: faq, frequently asked questions, questions, fluid
 summary: This FAQ can help if you’re just looking for a quick answer to a question.
 ---
 
-= Frequently asked questions about Cloud Compliance
+= Frequently asked questions about Fluid
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -23,15 +23,15 @@ Cloud Compliance is a cloud offering that uses Artificial Intelligence (AI) driv
 
 Cloud Compliance provides pre-defined parameters (such as sensitive information types and categories) to address new data compliance regulations for data privacy and sensitivity, such as GDPR, CCPA, HIPAA, and more.
 
-== Why should I use Cloud Compliance?
+== Why should I use Fluid?
 
-Cloud Compliance can empower you with data to help you:
+Fluid can simply and automatically enable you to build cloud like networks, deploy containers and virtual machines and create hybrid cloud architectures on any compute hardware:
 
 * Comply with data compliance and privacy regulations.
 * Comply with data retention policies.
 * Easily locate and report on specific data in response to data subjects, as required by GDPR, CCPA, HIPAA, and other data privacy regulations.
 
-== What are the common use cases for Cloud Compliance?
+== What are the common use cases for Fluid?
 
 * Identify Personal Identifiable Information (PII).
 * Identify a wide scope of sensitive information as required by GDPR and CCPA privacy regulations.
@@ -39,24 +39,19 @@ Cloud Compliance can empower you with data to help you:
 
 https://cloud.netapp.com/cloud-compliance[Learn more about the use cases for Cloud Compliance^].
 
-== What types of data can be scanned with Cloud Compliance?
-
-Cloud Compliance supports scanning of unstructured data over NFS and CIFS protocols that are managed by Cloud Volumes ONTAP, Azure NetApp Files, and on-prem ONTAP systems. Cloud Compliance can also scan data stored on Amazon S3 buckets.
-// non-NetApp file shares,  generic S3 object storage.
-
-Additionally, Cloud Compliance can scan databases that are located anywhere, and user files from OneDrive accounts.
-
-link:concept_cloud_compliance.html#how-scans-work[Learn how scans work^].
-
 == Which cloud providers are supported?
 
 Cloud Compliance operates as part of Cloud Manager and currently supports AWS and Azure. This provides your organization with unified privacy visibility across different cloud providers.
 
-== How do I access Cloud Compliance?
+== Which elastic connectivity providers are supported?
 
-Cloud Compliance is operated and managed through Cloud Manager. You can access Cloud Compliance features from the *Compliance* tab in Cloud Manager.
+Fluid operates as part of Cloud Manager and currently supports Console Connect from PCCW, Megaport and Equinix Fabric (formerly Equinix Cloud Exchange). This provides your organization with truly unified hybrid, multi-cloud capabilities across different cloud providers.
 
-== How does Cloud Compliance work?
+== How do I access Fluid?
+
+Fluid is operated and managed through Cloud Manager. You can access Fluid features from the *Fluid* tab in Cloud Manager.
+
+== How does Fluid work?
 
 Cloud Compliance deploys another layer of Artificial Intelligence alongside your Cloud Manager system and storage systems. It then scans the data on volumes, buckets, databases, and OneDrive accounts and indexes the data insights that are found.
 
