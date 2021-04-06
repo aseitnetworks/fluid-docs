@@ -85,9 +85,9 @@ Note the following about the instance:
 
 * FLUID initially deploys a single node, single master, Kubernetes cluster to manage the deployment
 
-* FLUID is designed to be deployed on bare-metal hardware outside of a cloud provider. It can however also be deployed in virtualised environments and inside cloud provider if necessary.
+* FLUID is designed to be deployed on bare-metal hardware outside of a cloud provider. It can however also be deployed in virtualised environments and inside cloud provider if necessary. Support for hardware as a service providers like Equinix Metal (formerly Packet) and Google Bare Metal servers are expected in calendar H2Y21.
 
-* Additional compute and network nodes can be deployed.... XXXXX
+* Additional compute and network nodes can be deployed by attaching the compute nodes to the existing network switch running FLUID 
 
 * Only one FLUID instance is deployed per cluster and only one cluster per FLUID instance. Today, multiple clusters/instances cannot be connected to each other but this feature is coming soon.
 
@@ -95,9 +95,13 @@ Note the following about the instance:
 
 == How cloud connnections work
 
-After you enable Cloud Compliance and select the volumes, buckets, database schemas, or OneDrive users you want to scan, it immediately starts scanning the data to identify personal and sensitive data. It maps your organizational data, categorizes each file, and identifies and extracts entities and predefined patterns in the data. The result of the scan is an index of personal information, sensitive personal information, data categories, and file types.
+After you deploy a FLUID instance it immediately calls home securely via an internet connection to the FLUID cloud service to obtain a unique Cloud Adoption Token (CAT). The Cluster Adoption Token is displayed on the console screen of any nodes in the cluster.
 
-Cloud Compliance connects to the data like any other client by mounting NFS and CIFS volumes. NFS volumes are automatically accessed as read-only, while you need to provide Active Directory credentials to scan CIFS volumes.
+Once the instance of FLUID is claimed in Cloud Manager using the CAT, configuration of network connections can be peformed as follows:
+
+. You click *Clusters* tab and use the Cloud Adoption Token to claim your cluster within *FLUID* in Cloud Manager.
+. You manage your baremetal kubernetes cluster using your preferred kubernetes management tool by retrieve the *kubeconfig* from within the *Cluster info*
+. Optionally, you configure and build your datacentre and/or cloud connectivity cricutis from the *Network* tab within *FLUID* in Cloud Manager.
 
 image:diagram_cloud_compliance_scan.png[A diagram that shows a Cloud Manager instance and a Cloud Compliance instance running in your cloud provider. The Cloud Compliance instance connects to NFS and CIFS volumes, S3 buckets, and databases to scan them.]
 
