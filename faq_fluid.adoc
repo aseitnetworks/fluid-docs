@@ -41,11 +41,17 @@ https://cloud.netapp.com/cloud-compliance[Learn more about the use cases for Clo
 
 == Which cloud providers are supported?
 
-Cloud Compliance operates as part of Cloud Manager and currently supports AWS and Azure. This provides your organization with unified privacy visibility across different cloud providers.
+Fluid operates as part of Cloud Manager and currently supports AWS, Azure and Google. This provides your organization with truly unified hybrid, multi-cloud capabilities across different cloud providers.
 
 == Which elastic connectivity providers are supported?
 
-Fluid operates as part of Cloud Manager and currently supports Console Connect from PCCW, Megaport and Equinix Fabric (formerly Equinix Cloud Exchange). This provides your organization with truly unified hybrid, multi-cloud capabilities across different cloud providers.
+Fluid operates as part of Cloud Manager and currently supports:
+
+* Console Connect by PCCW
+* Megaport
+* Equinix Fabric (formerly Equinix Cloud Exchange)
+
+This provides your organization with truly unified hybrid, multi-cloud networking capabilities across different cloud providers and locations.
 
 == How do I access Fluid?
 
@@ -57,51 +63,28 @@ Cloud Compliance deploys another layer of Artificial Intelligence alongside your
 
 link:concept_cloud_compliance.html[Learn more about how Cloud Compliance works^].
 
-== How much does Cloud Compliance cost?
+== How much does Fluid cost?
 
-The cost to use Cloud Compliance depends on the amount of data that you're scanning. The first 1 TB of data that Cloud Compliance scans in a Cloud Manager workspace is free. A subscription to the AWS or Azure Marketplace is required to continue scanning data after that point. See https://cloud.netapp.com/cloud-compliance#pricing[pricing^] for details.
-
-== What type of instance or VM is required for Cloud Compliance?
-
-* In Azure, Cloud Compliance runs on a Standard_D16s_v3 VM with a 512 GB disk.
-
-* In AWS, Cloud Compliance runs on an m5.4xlarge instance with a 500 GB GP2 disk.
+The cost to use FLUID depends on the number of nodes you have in your deployment. A node is defined as a compute, switch or network function virtualisation (NFV) device. A subscription is required to deploy FLUID and connect the deployed clusters to Cloud Manager. See https://cloud.fluidhq.io/pricing[pricing^] for details.
 +
-In regions where m5.4xlarge isn't available, Cloud Compliance runs on an m4.4xlarge instance instead.
+link:task_deploy_cloud_compliance.html#subscribing-to-the-cloud-compliance-service[Learn how to subscribe^].
++
+*Note:* This subscription is not needed during the Beta version period.
+*Note:* Cloud provider and elastic connectivity charges are .
 
-You can also download and install Compliance software on a Linux host in your network or in the cloud. Everything works the same and you continue to manage your scan configuration and results through Cloud Manager. See link:task_deploy_cloud_compliance.html#deploying-the-cloud-compliance-instance-on-premises[Deploying Cloud Compliance on premises^] for system requirements and installation details.
+== What type of hardware is required for Fluid?
 
-NOTE: Cloud Compliance is currently unable to scan S3 buckets and ANF files when it is installed on premises.
+* For compute nodes, Fluid runs on any x86 server hardware with at least one internal disk drive, 2 network ports and 1 management network port
+
+* For network switch nodes, Fluid runs on most "whitebox" hardware vendors that support Switchdev from the linux Kernel.
 
 link:concept_cloud_compliance.html[Learn more about how Cloud Compliance works^].
 
-== How often does Cloud Compliance scan my data?
+== Does Fluid provide management of Kubernetes environments and workloads?
 
-Data changes frequently, so Cloud Compliance scans your data continuously with no impact to your data. While the initial scan of your data might take longer, subsequent scans only scan the incremental changes, which reduces system scan times.
+No - Fluid is designed to bridge the gap between bare-metal hardware and a running Kubernetes cluster. Fluid provides a kubeconfig file for download from the Cloud Manager interface which may then be imported into Kubernetes management tools such as Rancher, Google Anthos, Google GKE in GCP console, Red Hat OpenShift and many more.
 
-link:concept_cloud_compliance.html#how-scans-work[Learn how scans work^].
-
-== Does Cloud Compliance offer reports?
-
-Yes. The information offered by Cloud Compliance can be relevant to other stakeholders in your organizations, so we enable you to generate reports to share the insights.
-
-The following reports are available for Cloud Compliance:
-
-Privacy Risk Assessment report:: Provides privacy insights from your data and a privacy risk score. link:task_generating_compliance_reports.html[Learn more^].
-
-Data Subject Access Request report:: Enables you to extract a report of all files that contain information regarding a data subject’s specific name or personal identifier. link:task_responding_to_dsar.html[Learn more^].
-
-PCI DSS report:: Helps you identify the distribution of credit card information across your files. link:task_generating_compliance_reports.html[Learn more^].
-
-HIPAA report:: Helps you identify the distribution of health information across your files. link:task_generating_compliance_reports.html[Learn more^].
-
-Reports on a specific information type:: Reports are available that include details about the identified files that contain personal data and sensitive personal data. You can also see files broken down by category and file type. link:task_controlling_private_data.html[Learn more^].
-
-== Does scan performance vary?
-
-Scan performance can vary based on the network bandwidth and the average file size in your cloud environment.
-
-== Which file types are supported?
+== Which container and virtual machine types are supported?
 
 Cloud Compliance scans all files for category and metadata insights and displays all file types in the file types section of the dashboard.
 
