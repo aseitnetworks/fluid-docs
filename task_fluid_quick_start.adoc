@@ -38,7 +38,7 @@ Cloud Sync guides you through the installation process when you create a sync re
 [role="quick-margin-para"]
 Log in to https://cloudmanager.netapp.com/[Cloud Manager^], click *Sync*, and then drag and drop your selections for the source and target. Follow the prompts to complete the setup. link:task_sync_creating_relationships.html[Learn more].
 
-==== image:number4.png[number4] Pay for your sync relationships after your free trial ends
+==== image:number4.png[number4] Pay for your Fluid nodes after your free trial ends
 
 [role="quick-margin-para"]
 Subscribe from AWS or Azure to pay-as-you-go or to pay annually. Or purchase licenses directly from NetApp. Just go to the License Settings page in Cloud Sync to set it up. link:task_sync_licensing.html[Learn more].
