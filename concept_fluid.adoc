@@ -93,6 +93,18 @@ Note the following about the instance:
 
 * Upgrades of FLUID software is automated--you don't need to worry about it.
 
+== Networking overview
+
+FLUID deploys its own layer 3 network stack to the datacentre/edge network switches and provides automated orchestration of connections to the public clouds and between deployment instances.
+
+In keeping with modern day best practise, layer 2 networking concepts such as spanning tree and VLANs are not part of the FLUID network stack. This ensures that environments behave like a public cloud vendor and can scale easily and quickly as required.
+
+Various cloud-like networking features such as the ability to create a load balancer for a service in Kubernetes is included in FLUID as well as Access Control Lists (ACLs) and Network Address Translation (NAT) rules and BGP routing capability.
+
+Internet access is needed to install and upgrade the FLUID software and to send usage metrics.
+
+If you have strict networking requirements, link:task_deploy_fluid.html#reviewing-prerequisites[learn about the endpoints that FLUID contacts^].
+
 == How cloud connnections work
 
 After you deploy a FLUID instance it immediately calls home securely via an internet connection to the FLUID cloud service to obtain a unique Cloud Adoption Token (CAT). The Cluster Adoption Token is displayed on the console screen of any nodes in the cluster.
@@ -108,18 +120,6 @@ image:diagram_cloud_compliance_scan.png[A diagram that shows a Cloud Manager ins
 After the initial scan, Cloud Compliance continuously scans your data to detect incremental changes (this is why it's important to keep the instance running).
 
 You can enable and disable scans at the link:task_getting_started_compliance.html#enabling-and-disabling-compliance-scans-on-volumes[volume level^], at the link:task_scanning_s3.html#enabling-and-disabling-compliance-scans-on-s3-buckets[bucket level^], the link:task_scanning_databases.html#enabling-and-disabling-compliance-scans-on-database-schemas[database schema level^], and at the link:task_scanning_onedrive.html#adding-onedrive-users-to-compliance-scans[OneDrive user level^].
-
-== Networking overview
-
-FLUID deploys its own layer 3 network stack to the datacentre/edge network switches and provides automated orchestration of connections to the public clouds and between deployment instances.
-
-In keeping with modern day best practise, layer 2 networking concepts such as spanning tree and VLANs are not part of the FLUID network stack. This ensures that environments behave like a public cloud vendor and can scale easily and quickly as required.
-
-Various cloud-like networking features such as the ability to create a load balancer for a service in Kubernetes is included in FLUID as well as Access Control Lists (ACLs) and Network Address Translation (NAT) rules and BGP routing capability.
-
-Internet access is needed to install and upgrade the FLUID software and to send usage metrics.
-
-If you have strict networking requirements, link:task_deploy_fluid.html#reviewing-prerequisites[learn about the endpoints that FLUID contacts^].
 
 == User access to compliance information
 
