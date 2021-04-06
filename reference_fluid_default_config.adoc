@@ -1,0 +1,60 @@
+---
+sidebar: sidebar
+permalink: reference_connector_default_config.html
+keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux
+summary: If you need to troubleshoot the Connector, it might help to understand how it's configured.
+---
+
+= Default configuration for the Connector
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+If you need to troubleshoot the Connector, it might help to understand how it's configured.
+
+* If you deployed the Connector from Cloud Manager (or directly from a cloud provider's marketplace), note the following:
+
+** In AWS, the user name for the EC2 Linux instance is ec2-user.
+
+** The operating system for the image is as follows:
+*** AWS: Red Hat Enterprise Linux 7.5 (HVM)
+*** Azure: Red Hat Enterprise Linux 7.6 (HVM)
+*** GCP: CentOS 7.6
++
+The operating system does not include a GUI. You must use a terminal to access the system.
+
+* The Connector installation folder resides in the following location:
++
+/opt/application/netapp/cloudmanager
+
+* Log files are contained in the following folder:
++
+/opt/application/netapp/cloudmanager/log
+
+* The Cloud Manager service is named occm.
+
+* The occm service is dependent on the MySQL service.
++
+If the MySQL service is down, then the occm service is down too.
+
+* Cloud Manager installs the following packages on the Linux host, if they are not already installed:
+** 7Zip
+** AWSCLI
+** Docker
+** Java
+** Kubectl
+** MySQL
+** Tridentctl
+** Pull
+** Wget
+
+* The Connector uses the following ports on the Linux host:
+** 80 for HTTP access
+** 443 for HTTPS access
+** 3306 for the Cloud Manager database
+** 8080 for the Cloud Manager API proxy
+** 8666 for the Service Manager API
+** 8777 for the Health-Checker Container Service API
