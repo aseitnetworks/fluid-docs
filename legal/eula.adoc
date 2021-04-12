@@ -95,11 +95,11 @@ ASE grants the Licensee, and the Licensee accepts, the non-exclusive, non-transf
 (vii)	modify, alter, translate, reverse engineer or create derivative works based upon Fluid. 
 
 
-2.3	NON-EXCLUSIVE
+===2.3	NON-EXCLUSIVE
 
 The Licensee acknowledges that this Agreement does not grant the Licensee any exclusivity in respect of Fluid and that ASE is entitled to license Fluid to other entities in its absolute discretion. 
 
-2.4	THIRD-PARTY APPLICATIONS AND PROVIDERS
+===2.4	THIRD-PARTY APPLICATIONS AND PROVIDERS
 
 (a)	The Licensee acknowledges and agrees that: 
 
@@ -132,9 +132,9 @@ The Licensee acknowledges that this Agreement does not grant the Licensee any ex
 
 (ii)	ASE and its Third-Party Licensors will in no way be responsible for any Losses that may result from the Licensee's use of any Third-Party Application, despite the fact that any such Third-Party Application may interface with Fluid, or that ASE may have provided installation or integration services with respect to the same. 
 
-3.	LICENSEE OBLIGATIONS
+==3.	LICENSEE OBLIGATIONS
 
-3.1	AUTHORISED USERS AND NAMED USER LICENCES 
+===3.1	AUTHORISED USERS AND NAMED USER LICENCES 
 
 (a)	The Licensee acknowledges that one (1) Named User Licence must only be used by one (1) Authorised User.
 
@@ -143,19 +143,19 @@ The Licensee acknowledges that this Agreement does not grant the Licensee any ex
 (c)	The Licensee represents and warrants that it is authorised to receive an Named User Licence and access and use Fluid, and possesses all licenses, certifications and other authorisations, whether required by applicable law or otherwise, to effect the transactions for which the Licensee accesses and uses Fluid.
 
 	
-3.2	INTELLECTUAL PROPERTY
+===3.2	INTELLECTUAL PROPERTY
 (a)	ASE remains the owner or licensee of any Intellectual Property created or developed as a result of the use of the License granted in this Agreement, and the Licensee must take all reasonable actions to protect the Intellectual Property rights comprised in Fluid. 
 
 (b)	The Licensee will not use, replicate, or modify ASE’s Intellectual Property save for the express purpose of using Fluid for its intended purpose only pursuant to this Agreement.
 
 
-3.3	PERFORMANCE INCIDENT REPORTING AND AUDIT RIGHTS
+===3.3	PERFORMANCE INCIDENT REPORTING AND AUDIT RIGHTS
 
 (a)	The Licensee agrees to provide ASE with data, documentation or other such evidence of Performance Incident(s) that it experiences during the term of the Agreement promptly upon becoming aware of such Performance Incident(s). 
 
 (b)	ASE shall have the right, upon reasonable notice to Licensee, to audit the Licensee's use of Fluid (by means of remote access or through entry to the Licensee's premises), and Licensee agrees to allow ASE or its representatives access to such systems, facilities, books and records as are reasonably required to audit the Licensee's compliance with the Agreement. 
 
-3.4	COMPLIANCE WITH LAW
+===3.4	COMPLIANCE WITH LAW
 
 (a)	Both parties will use their best endeavours to ensure compliance with: 
 
@@ -164,14 +164,14 @@ The Licensee acknowledges that this Agreement does not grant the Licensee any ex
 (ii)	all applicable laws, rules, regulations and conventions relating to data privacy, data security, international communications, communications decency and the importation and exportation of software and data. 
 
 
-4.	TERMINATION
+==4.	TERMINATION
 
-4.1	BREACH BY LICENSEE
+===4.1	BREACH BY LICENSEE
 	
 ASE may terminate this Agreement in the event that the Licensee has breached a term of this Agreement that is not a reason referred to in Clause 4.2, and the Licensee has failed to rectify the breach within seven 7 of receiving written notice from ASE.
 
 
-4.2	SPECIAL CIRCUMSTANCES
+===4.2	SPECIAL CIRCUMSTANCES
 	
 ASE may terminate the Agreement, effective immediately, in the event: 
 
@@ -185,7 +185,7 @@ ASE may terminate the Agreement, effective immediately, in the event:
 
 
 
-4.3	UPON TERMINATION OR EXPIRATION
+===4.3	UPON TERMINATION OR EXPIRATION
 
 (a)	Upon termination or expiration of this Agreement, the Licensee must: 
 
@@ -197,7 +197,7 @@ ASE may terminate the Agreement, effective immediately, in the event:
 
 (b)	Upon request from ASE, the Licensee shall provide ASE with prompt written certification of its compliance with this clause, executed by a duly authorised officer of the Licensee. 
 
-5.	INDEMNITY
+==5.	INDEMNITY
 
 (a)	Notwithstanding the remainder of this Agreement, the Licensee shall indemnify and hold harmless ASE, the Group and its officers, employees and directors,  from and against any all claims, demands, Losses, damages, proceedings, compensation, Costs, charges, expenses and liabilities which may arise in respect of: 
 
@@ -207,9 +207,9 @@ ASE may terminate the Agreement, effective immediately, in the event:
 
 (iii)	any breach of any Intellectual Property clauses of this Agreement.
 
-6.	LIABILITY AND WARRANTIES
+==6.	LIABILITY AND WARRANTIES
 
-6.1	DISCLAIMER 
+===6.1	DISCLAIMER 
 
 (a)	Notwithstanding anything herein to the contrary, ASE specifically does not warrant that: 
 
@@ -247,19 +247,19 @@ ASE may terminate the Agreement, effective immediately, in the event:
 
 (ii)	discontinue the licensing and/or support of Fluid. 
 	
-6.2	LIMITATION
+===6.2	LIMITATION
 	
 (a)	In no event shall ASE or its respective affiliates, partners, officers, employees, directors, agents, contractors, representatives, successors or assigns, as such, be liable to the Licensee or anyone claiming under or through the Licensee, for any punitive, exemplary, incidental, indirect, or special damages, or consequential loss, based on, arising out of or in connection with this Agreement, or any matter relating to this Agreement, or error in information (whether negligent or not) supplied before or after the date of this Agreement in connection with its subject matter, whether based on contract, tort (including but without limitation negligence), or any other legal or equitable grounds, even if ASE knew or ought to have known of the possibility of such damages or consequential loss. ‘Consequential loss’ shall include but not be limited to loss of profits, interest revenue, use, or goodwill (or similar financial loss), loss of data, business interruption, or payments made or due to any third party.
 
 
-7.	NOTICES
+==7.	NOTICES
 
 Unless otherwise specified in the Agreement, all notices, requests, demands, and other communications (other than routine operational or billing communications) required or permitted hereunder shall be in writing and shall be deemed to have been received by a party one (1) business day after transmission by electronic mail.
 
-8.	SEVERABILITY
+==8.	SEVERABILITY
 
 If anything in this Agreement is deemed to be unenforceable, illegal or void, then it is severed and leaves intact all other non-severable parts of this Agreement, which remain in full force.
 
-9.	GOVERNING LAW 
+==9.	GOVERNING LAW 
 
 (a)	This Agreement will be governed by and construed in accordance with the laws from time to time in force in the state of New South Wales and both parties submit to the non-exclusive jurisdiction of the courts of that state and of the Commonwealth of Australia.
