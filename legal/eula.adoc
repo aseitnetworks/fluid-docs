@@ -62,101 +62,204 @@ This Agreement is between ANDREW SJOQUIST ENTERPRISES PTY LTD ABN 99 095 082 492
 (15)	User Manual means written guidelines and/or instructions relating to Fluid.
 
 
-== Supported working environments and hardware
+== 2. LICENCE
+=== 2.1 GRANT
 
-FLUID can be deployed onto the following hardware, and supports the following virtual cross connect and cloud providers:
+ASE grants the Licensee, and the Licensee accepts, the non-exclusive, non-transferable right to access and use Fluid subject to the terms of this Agreement and subject to payment of the License Fee.
 
-* Mellanox switches
-* Any x86 compute hardware
-* Any virtual compute hardware
-* Console Connect by PCCW Global
-* Megaport
-* Equinix Fabric (formerly Equinix Cloud Exchange)
-* Amazon Web Services (AWS)
-* Azure
-* Google Cloud Platform (GCP)
+	
+===2.2	SCOPE AND RESTRICTIONS
 
-NOTE: A Beta version released in April 2021 allows you to run FLUID free on on premises hardware.
+(a)	The Licensee shall only access and use Fluid:
 
-== Cost
+(i)	for business purposes, as disclosed to ASE; 
 
-* The cost to use FLUID depends on the number of nodes you have in your deployment. A node is defined as a compute, switch or network function virtualisation (NFV) device. A subscription is required to deploy FLUID and connect the deployed clusters to Cloud Manager. See https://cloud.fluidhq.io/pricing[pricing^] for details.
-+
-link:task_deploy_cloud_compliance.html#subscribing-to-the-cloud-compliance-service[Learn how to subscribe^].
-+
-*Note:* This subscription is not needed during the Beta version period.
+(ii)	in accordance with the intended use of Fluid; and
 
-* Installing FLUID requires deploying the FLUID operating system to compute and network hardware, which is procured by the user. See the <<The Cloud Compliance instance,the type of instance that is deployed for each cloud provider>>.
+(iii)	in accordance with ASE’s instructions from time to time.
 
-* FLUID does not require a connector or virtual cross connect providers for the control plane. An internet connection is sufficient for the FLUID control plane to connect to the FLUID cloud service and Cloud Manager. The control plane connection between FLUID cluster, the FLUID cloud services and Cloud Manager is served over HTTPS, and the private data sent between components are secured with end-to-end encryption, which means NetApp and third parties can’t read it. See the link:reference_cloud_mgr_reqs.html[type of instance that is deployed for each cloud provider^].
 
-== How FLUID works
+(b)	The Licensee must not, without ASE’s prior written consent:
+(i)	use Fluid for any purpose or in any manner other than as set out in this Agreement;
 
-At a high-level, FLUID works like this:
+(ii)	use Fluid in any way that could damage the reputation of ASE or the goodwill or other rights associated with Fluid;
 
-. You deploy FLUID operating system on network switches and/or compute hardware using downloads ISO files, pre-packaged ONIE installer URL or PXE booting compute nodes connected to switches running FLUID.
-. The devices automatically form a cluster and register themselves with the FLUID cloud service.
-. You obtain a Cloud Adoption Token from the console of any device in the cluster - switch node or compute node.
-. You click *Clusters* tab and use the Cloud Adoption Token to claim your cluster within *FLUID* in Cloud Manager.
-. You manage your baremetal kubernetes cluster using your preferred kubernetes management tool by retrieve the *kubeconfig* from within the *Cluster info*
-. Optionally, you configure and build your datacentre and/or cloud connectivity cricutis from the *Network* tab within *FLUID* in Cloud Manager.
+(iii)	permit any entity that is not an Authorised User to use, access or otherwise deal with Fluid;
 
-== The FLUID cluster instance
+(iv)	reproduce, make error corrections or otherwise modify or adapt Fluid or create any derivative works based on Fluid;
 
-When you deploy FLUID, the installer deploys the instance in the same subnet as XXXXX. link:concept_connectors.html[Learn more about Connectors.^]
+(v)	resell, sublicense, distribute, allow access to or otherwise provide or make available for any purpose any component of Fluid to any person, firm or entity that is not licensed under this Agreement;
 
-NOTE: If the subnetting of the deployment is required to be altered, this can be achieve by XXXXX.
+(vi)	attempt to disassemble, decompile, circumvent any technological measure that effectively controls access to, or reverse engineer Fluid, or otherwise engage in any conduct designed or intended to interfere with the operation of Fluid, except to the extent that such activity is expressly permitted by applicable law; or
 
-image:diagram_cloud_compliance_instance.png[A diagram that shows a Cloud Manager instance and a Cloud Compliance instance running in your cloud provider.]
+(vii)	modify, alter, translate, reverse engineer or create derivative works based upon Fluid. 
 
-Note the following about the instance:
 
-* FLUID initially deploys a single node, single master, Kubernetes cluster to manage the deployment
+2.3	NON-EXCLUSIVE
 
-* FLUID is designed to be deployed on bare-metal hardware outside of a cloud provider. It can however also be deployed in virtualised environments and inside cloud provider if necessary. Support for hardware as a service providers like Equinix Metal (formerly Packet) and Google Bare Metal servers are expected in calendar H2Y21.
+The Licensee acknowledges that this Agreement does not grant the Licensee any exclusivity in respect of Fluid and that ASE is entitled to license Fluid to other entities in its absolute discretion. 
 
-* Additional compute and network nodes can be deployed by attaching the compute nodes to the existing network switch running FLUID 
+2.4	THIRD-PARTY APPLICATIONS AND PROVIDERS
 
-* Only one FLUID instance is deployed per cluster and only one cluster per FLUID instance. Today, multiple clusters/instances cannot be connected to each other but this feature is coming soon.
+(a)	The Licensee acknowledges and agrees that: 
 
-* Upgrades of FLUID software is automated--you don't need to worry about it.
+(i)	in order to obtain certain functions within Fluid, the Licensee may elect to obtain a licence to Third-Party Applications;
 
-== Networking overview
+(ii)	ASE may, with the Licensee’s prior consent, sign the Licensee up to use certain Third-Party Applications;
 
-FLUID deploys its own layer 3 network stack to the datacentre/edge network switches and provides automated orchestration of connections to the public clouds and between deployment instances.
+(iii)	any Third-Party Applications are separate from and independent of ASE;
 
-In keeping with modern day best practise, layer 2 networking concepts such as spanning tree and VLANs are not part of the FLUID network stack. This ensures that environments behave like a public cloud vendor and can scale easily and quickly as required.
+(iv)	the Licensee is responsible for adhering to the terms of any agreement between the Licensee and any Third-Party Provider;
 
-Various cloud-like networking features such as the ability to create a load balancer for a service in Kubernetes is included in FLUID as well as Access Control Lists (ACLs) and Network Address Translation (NAT) rules and BGP routing capability.
+(v)	in the event that the Licensee fails to comply with this clause, the Licensee acknowledges that the functionality of Fluid may be reduced or otherwise affected;
 
-Internet access is needed to install and upgrade the FLUID software and to send usage metrics.
+(vi)	ASE makes no representations or warranties relating to, and is not liable in relation to, Third-Party Applications, or any other product, service, internet site, or other functionality operated or supplied by Third- Party Providers or any data or information provided by any of them, including, but not limited to representations or warranties as to any Third-Party Provider's compliance with laws and representations or warranties as to site availability; and
 
-If you have strict networking requirements, link:task_deploy_fluid.html#reviewing-prerequisites[learn about the endpoints that FLUID contacts^].
+(vii)	such Third-Party Providers and ASE are not partners, representatives or agents of each other.
 
-== How cloud connnections work
+(b)	In no event shall ASE be responsible for any information contained in a Third-Party Application, including without limitation, its formatting, screening or display of data, or for the Licensee's use of or inability to use such Third-Party Application. 
 
-After you deploy a FLUID instance it immediately calls home securely via an internet connection to the FLUID cloud service to obtain a unique Cloud Adoption Token (CAT). The Cluster Adoption Token is displayed on the console screen of any nodes in the cluster.
+(c)	ASE and its Third-Party Licensors make no representations or warranties regarding:
 
-Once the instance of FLUID is claimed in Cloud Manager using the CAT, configuration of network connections can be peformed as follows:
+(i)	the availability or timing of any availability of any interface between Fluid and any third-party software and/or systems (including the Third-Party Applications); and
 
-. You click *Clusters* tab and use the Cloud Adoption Token to claim your cluster within *FLUID* in Cloud Manager.
-. You manage your baremetal kubernetes cluster using your preferred kubernetes management tool by retrieve the *kubeconfig* from within the *Cluster info*
-. Optionally, you configure and build your datacentre and/or cloud connectivity cricutis from the *Network* tab within *FLUID* in Cloud Manager.
+(ii)	the availability of or access to or by any specific provider of third-party software and/or systems (including the Third-Party Applications).
 
-image:diagram_cloud_compliance_scan.png[A diagram that shows a Cloud Manager instance and a Cloud Compliance instance running in your cloud provider. The Cloud Compliance instance connects to NFS and CIFS volumes, S3 buckets, and databases to scan them.]
 
-After the initial scan, Cloud Compliance continuously scans your data to detect incremental changes (this is why it's important to keep the instance running).
+(d)	The Licensee acknowledges and agrees that:
 
-You can enable and disable scans at the link:task_getting_started_compliance.html#enabling-and-disabling-compliance-scans-on-volumes[volume level^], at the link:task_scanning_s3.html#enabling-and-disabling-compliance-scans-on-s3-buckets[bucket level^], the link:task_scanning_databases.html#enabling-and-disabling-compliance-scans-on-database-schemas[database schema level^], and at the link:task_scanning_onedrive.html#adding-onedrive-users-to-compliance-scans[OneDrive user level^].
+(i)	in the event that the Third-Party Application is no longer available to be interfaced with Fluid, the functionality, speed or other characteristic of Fluid may be reduced or otherwise affected; and
 
-== User access to compliance information
+(ii)	ASE and its Third-Party Licensors will in no way be responsible for any Losses that may result from the Licensee's use of any Third-Party Application, despite the fact that any such Third-Party Application may interface with Fluid, or that ASE may have provided installation or integration services with respect to the same. 
 
-The role each user has been assigned provides different capabilities within Cloud Manager and within Cloud Compliance:
+3.	LICENSEE OBLIGATIONS
 
-* *Account Admins* can manage compliance settings and view compliance information for all working environments.
+3.1	AUTHORISED USERS AND NAMED USER LICENCES 
 
-* *Workspace Admins* can manage compliance settings and view compliance information only for systems that they have permissions to access. If a Workspace Admin can't access a working environment in Cloud Manager, then they can't see any compliance information for the working environment in the Compliance tab.
+(a)	The Licensee acknowledges that one (1) Named User Licence must only be used by one (1) Authorised User.
 
-* Users with the *Cloud Compliance Viewer* role can only view compliance information and generate reports for systems that they have permission to access. These users cannot enable/disable scanning of volumes, buckets, or database schemas.
+(b)	The Licensee's access to Fluid is dependent upon a security access system that requires each Authorised User to use their Named User Licence. 
 
-link:reference_user_roles.html[Learn more about Cloud Manager roles^] and how to link:task_managing_cloud_central_accounts.html#adding-users[add users with specific roles^].
+(c)	The Licensee represents and warrants that it is authorised to receive an Named User Licence and access and use Fluid, and possesses all licenses, certifications and other authorisations, whether required by applicable law or otherwise, to effect the transactions for which the Licensee accesses and uses Fluid.
+
+	
+3.2	INTELLECTUAL PROPERTY
+(a)	ASE remains the owner or licensee of any Intellectual Property created or developed as a result of the use of the License granted in this Agreement, and the Licensee must take all reasonable actions to protect the Intellectual Property rights comprised in Fluid. 
+
+(b)	The Licensee will not use, replicate, or modify ASE’s Intellectual Property save for the express purpose of using Fluid for its intended purpose only pursuant to this Agreement.
+
+
+3.3	PERFORMANCE INCIDENT REPORTING AND AUDIT RIGHTS
+
+(a)	The Licensee agrees to provide ASE with data, documentation or other such evidence of Performance Incident(s) that it experiences during the term of the Agreement promptly upon becoming aware of such Performance Incident(s). 
+
+(b)	ASE shall have the right, upon reasonable notice to Licensee, to audit the Licensee's use of Fluid (by means of remote access or through entry to the Licensee's premises), and Licensee agrees to allow ASE or its representatives access to such systems, facilities, books and records as are reasonably required to audit the Licensee's compliance with the Agreement. 
+
+3.4	COMPLIANCE WITH LAW
+
+(a)	Both parties will use their best endeavours to ensure compliance with: 
+
+(i)	all federal, state and local laws, rules, and regulations applicable to its activities in connection with which Fluid, and any data generated by, submitted to or evaluated utilising Fluid; and 
+
+(ii)	all applicable laws, rules, regulations and conventions relating to data privacy, data security, international communications, communications decency and the importation and exportation of software and data. 
+
+
+4.	TERMINATION
+
+4.1	BREACH BY LICENSEE
+	
+ASE may terminate this Agreement in the event that the Licensee has breached a term of this Agreement that is not a reason referred to in Clause 4.2, and the Licensee has failed to rectify the breach within seven 7 of receiving written notice from ASE.
+
+
+4.2	SPECIAL CIRCUMSTANCES
+	
+ASE may terminate the Agreement, effective immediately, in the event: 
+
+(i)	of any suspected breach of the Licensee’s obligations in this Agreement relating to ASE’s Intellectual Property;
+
+(ii)	if the License Fee has not been paid; 
+
+(iii)	any other agreement which refers to this EULA has been breached; and
+
+(iv)	the Software Collaboration is no longer in operation.
+
+
+
+4.3	UPON TERMINATION OR EXPIRATION
+
+(a)	Upon termination or expiration of this Agreement, the Licensee must: 
+
+(i)	immediately cease accessing and using Fluid; 
+
+(ii)	return to ASE, or destroy if requested by ASE, at the Licensee’s expense, all materials associated with ASE’s Intellectual Property and the Confidential Information, including, but not limited to, Fluid, the Documentation, marketing materials, stationery and signage; and
+
+(iii)	continue to comply with the continuing obligations under this Agreement. 
+
+(b)	Upon request from ASE, the Licensee shall provide ASE with prompt written certification of its compliance with this clause, executed by a duly authorised officer of the Licensee. 
+
+5.	INDEMNITY
+
+(a)	Notwithstanding the remainder of this Agreement, the Licensee shall indemnify and hold harmless ASE, the Group and its officers, employees and directors,  from and against any all claims, demands, Losses, damages, proceedings, compensation, Costs, charges, expenses and liabilities which may arise in respect of: 
+
+(i)	the Licensee's use of Fluid (except to the extent that it can be proven by the Licensee that the loss or damage was caused by the negligence or gross wilful omission of ASE); 
+
+(ii)	any fraudulent or unlawful acts or omissions of the Licensee in connection with the Agreement or Fluid (except to the extent that ASE or its Third-Party Licensors caused such Losses); and/or
+
+(iii)	any breach of any Intellectual Property clauses of this Agreement.
+
+6.	LIABILITY AND WARRANTIES
+
+6.1	DISCLAIMER 
+
+(a)	Notwithstanding anything herein to the contrary, ASE specifically does not warrant that: 
+
+(i)	Fluid or any components thereof will perform without interruption or error, or that all Performance Incidents will be corrected;
+
+(ii)	Fluid (including the data and other information contained therein) will meet the Licensee's requirements; 
+
+(iii)	Fluid will operate in the configuration which the Licensee may select for use; or 
+
+(iv)	data or other information generated by or contained in Fluid will be accurate or complete. 
+
+(b)	The Licensee agrees that ASE shall not be liable for:
+
+(i)	the accurate or complete transmission of data or other materials; 
+
+(ii)	any disruption, interference with, or interruption to, the Licensee’s access to Fluid;
+
+(iii)	any corruption or loss of the Licensee’s Intellectual Property, which is at the Licensee’s risk at all times; 
+
+(iv)	any Losses which the Licensee has suffered or may suffer in relation to ASE exercising its rights under this Agreement, including but not limited to pursuant to clause 10;
+
+(v)	any irregularities, errors, problems or defects arising from: 
+
+(A)	failure of Licensee to provide a suitable installation and operating environment, including but not limited to, failure to use supplies, materials, software and hardware platforms that meet the specifications set forth in the Documentation; 
+
+(B)	the Licensee's incorporation, attachment or engagement of any attachment, feature, program or device to Fluid; 
+
+(C)	use of Fluid outside the scope of its intended purpose, as described in the User Manual or ASE’s directions from time to time; or 
+
+(D)	the Licensee's failure to incorporate any update in usage instructions, as set out in the User Manual or otherwise, as specified previously released by ASE that corrects such item. 
+
+(c)	ASE reserves the right to: 
+
+(i)	modify Fluid or substitute any materials contained therein so long as the new materials do not materially affect the functionality of Fluid; and 
+
+(ii)	discontinue the licensing and/or support of Fluid. 
+	
+6.2	LIMITATION
+	
+(a)	In no event shall ASE or its respective affiliates, partners, officers, employees, directors, agents, contractors, representatives, successors or assigns, as such, be liable to the Licensee or anyone claiming under or through the Licensee, for any punitive, exemplary, incidental, indirect, or special damages, or consequential loss, based on, arising out of or in connection with this Agreement, or any matter relating to this Agreement, or error in information (whether negligent or not) supplied before or after the date of this Agreement in connection with its subject matter, whether based on contract, tort (including but without limitation negligence), or any other legal or equitable grounds, even if ASE knew or ought to have known of the possibility of such damages or consequential loss. ‘Consequential loss’ shall include but not be limited to loss of profits, interest revenue, use, or goodwill (or similar financial loss), loss of data, business interruption, or payments made or due to any third party.
+
+
+7.	NOTICES
+
+Unless otherwise specified in the Agreement, all notices, requests, demands, and other communications (other than routine operational or billing communications) required or permitted hereunder shall be in writing and shall be deemed to have been received by a party one (1) business day after transmission by electronic mail.
+
+8.	SEVERABILITY
+
+If anything in this Agreement is deemed to be unenforceable, illegal or void, then it is severed and leaves intact all other non-severable parts of this Agreement, which remain in full force.
+
+9.	GOVERNING LAW 
+
+(a)	This Agreement will be governed by and construed in accordance with the laws from time to time in force in the state of New South Wales and both parties submit to the non-exclusive jurisdiction of the courts of that state and of the Commonwealth of Australia.
