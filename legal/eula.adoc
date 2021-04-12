@@ -63,12 +63,12 @@ This Agreement is between ANDREW SJOQUIST ENTERPRISES PTY LTD ABN 99 095 082 492
 
 
 == 2. LICENCE
-=== 2.1 GRANT
+== 2.1 GRANT
 
 ASE grants the Licensee, and the Licensee accepts, the non-exclusive, non-transferable right to access and use Fluid subject to the terms of this Agreement and subject to payment of the License Fee.
 
 	
-===2.2	SCOPE AND RESTRICTIONS
+==2.2	SCOPE AND RESTRICTIONS
 
 (a)	The Licensee shall only access and use Fluid:
 
@@ -95,11 +95,11 @@ ASE grants the Licensee, and the Licensee accepts, the non-exclusive, non-transf
 (vii)	modify, alter, translate, reverse engineer or create derivative works based upon Fluid. 
 
 
-===2.3	NON-EXCLUSIVE
+==2.3	NON-EXCLUSIVE
 
 The Licensee acknowledges that this Agreement does not grant the Licensee any exclusivity in respect of Fluid and that ASE is entitled to license Fluid to other entities in its absolute discretion. 
 
-===2.4	THIRD-PARTY APPLICATIONS AND PROVIDERS
+==2.4	THIRD-PARTY APPLICATIONS AND PROVIDERS
 
 (a)	The Licensee acknowledges and agrees that: 
 
@@ -134,7 +134,7 @@ The Licensee acknowledges that this Agreement does not grant the Licensee any ex
 
 ==3.	LICENSEE OBLIGATIONS
 
-===3.1	AUTHORISED USERS AND NAMED USER LICENCES 
+==3.1	AUTHORISED USERS AND NAMED USER LICENCES 
 
 (a)	The Licensee acknowledges that one (1) Named User Licence must only be used by one (1) Authorised User.
 
@@ -143,19 +143,19 @@ The Licensee acknowledges that this Agreement does not grant the Licensee any ex
 (c)	The Licensee represents and warrants that it is authorised to receive an Named User Licence and access and use Fluid, and possesses all licenses, certifications and other authorisations, whether required by applicable law or otherwise, to effect the transactions for which the Licensee accesses and uses Fluid.
 
 	
-===3.2	INTELLECTUAL PROPERTY
+==3.2	INTELLECTUAL PROPERTY
 (a)	ASE remains the owner or licensee of any Intellectual Property created or developed as a result of the use of the License granted in this Agreement, and the Licensee must take all reasonable actions to protect the Intellectual Property rights comprised in Fluid. 
 
 (b)	The Licensee will not use, replicate, or modify ASE’s Intellectual Property save for the express purpose of using Fluid for its intended purpose only pursuant to this Agreement.
 
 
-===3.3	PERFORMANCE INCIDENT REPORTING AND AUDIT RIGHTS
+==3.3	PERFORMANCE INCIDENT REPORTING AND AUDIT RIGHTS
 
 (a)	The Licensee agrees to provide ASE with data, documentation or other such evidence of Performance Incident(s) that it experiences during the term of the Agreement promptly upon becoming aware of such Performance Incident(s). 
 
 (b)	ASE shall have the right, upon reasonable notice to Licensee, to audit the Licensee's use of Fluid (by means of remote access or through entry to the Licensee's premises), and Licensee agrees to allow ASE or its representatives access to such systems, facilities, books and records as are reasonably required to audit the Licensee's compliance with the Agreement. 
 
-===3.4	COMPLIANCE WITH LAW
+==3.4	COMPLIANCE WITH LAW
 
 (a)	Both parties will use their best endeavours to ensure compliance with: 
 
@@ -166,12 +166,12 @@ The Licensee acknowledges that this Agreement does not grant the Licensee any ex
 
 ==4.	TERMINATION
 
-===4.1	BREACH BY LICENSEE
+==4.1	BREACH BY LICENSEE
 	
 ASE may terminate this Agreement in the event that the Licensee has breached a term of this Agreement that is not a reason referred to in Clause 4.2, and the Licensee has failed to rectify the breach within seven 7 of receiving written notice from ASE.
 
 
-===4.2	SPECIAL CIRCUMSTANCES
+==4.2	SPECIAL CIRCUMSTANCES
 	
 ASE may terminate the Agreement, effective immediately, in the event: 
 
@@ -185,7 +185,7 @@ ASE may terminate the Agreement, effective immediately, in the event:
 
 
 
-===4.3	UPON TERMINATION OR EXPIRATION
+==4.3	UPON TERMINATION OR EXPIRATION
 
 (a)	Upon termination or expiration of this Agreement, the Licensee must: 
 
@@ -209,7 +209,7 @@ ASE may terminate the Agreement, effective immediately, in the event:
 
 ==6.	LIABILITY AND WARRANTIES
 
-===6.1	DISCLAIMER 
+==6.1	DISCLAIMER 
 
 (a)	Notwithstanding anything herein to the contrary, ASE specifically does not warrant that: 
 
@@ -247,7 +247,7 @@ ASE may terminate the Agreement, effective immediately, in the event:
 
 (ii)	discontinue the licensing and/or support of Fluid. 
 	
-===6.2	LIMITATION
+==6.2	LIMITATION
 	
 (a)	In no event shall ASE or its respective affiliates, partners, officers, employees, directors, agents, contractors, representatives, successors or assigns, as such, be liable to the Licensee or anyone claiming under or through the Licensee, for any punitive, exemplary, incidental, indirect, or special damages, or consequential loss, based on, arising out of or in connection with this Agreement, or any matter relating to this Agreement, or error in information (whether negligent or not) supplied before or after the date of this Agreement in connection with its subject matter, whether based on contract, tort (including but without limitation negligence), or any other legal or equitable grounds, even if ASE knew or ought to have known of the possibility of such damages or consequential loss. ‘Consequential loss’ shall include but not be limited to loss of profits, interest revenue, use, or goodwill (or similar financial loss), loss of data, business interruption, or payments made or due to any third party.
 
