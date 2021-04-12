@@ -25,9 +25,9 @@ This Agreement is between ANDREW SJOQUIST ENTERPRISES PTY LTD ABN 99 095 082 492
 
 (2)	Commencement Date means the earlier of:
 
-(i)	the date specified in the Schedule; or
+	(i)	the date specified in the Schedule; or
 
-(ii)	the date when ASE first provides the Licensee with access to any part of Fluid, pursuant to the terms of this Agreement,
+	(ii)	the date when ASE first provides the Licensee with access to any part of Fluid, pursuant to the terms of this Agreement,
 
 
 (3)	Documentation means any documents, templates and/or reports that are supplied by ASE in relation to Fluid; 
@@ -46,9 +46,9 @@ This Agreement is between ANDREW SJOQUIST ENTERPRISES PTY LTD ABN 99 095 082 492
 
 (10)	Performance Incident means: 
 
-(i)	any irregularity, error, problem or defect resulting from an incorrect functioning of Fluid if such irregularity, error, problem or defect renders Fluid incapable of meeting the material specifications causes incorrect functions to occur; or
+	(i)	any irregularity, error, problem or defect resulting from an incorrect functioning of Fluid if such irregularity, error, problem or defect renders Fluid incapable of meeting the material specifications causes incorrect functions to occur; or
 
-(ii)	an incorrect or incomplete identification, statement, representation or diagram in the Documentation that causes the Documentation to be inaccurate or incomplete in any material respect; 
+	(ii)	an incorrect or incomplete identification, statement, representation or diagram in the Documentation that causes the Documentation to be inaccurate or incomplete in any material respect; 
 
 
 (11)	Software Collaboration means the integration of Fluid with NetApp and any other open-source software such as [INSERT DETAILS];
@@ -72,69 +72,69 @@ ASE grants the Licensee, and the Licensee accepts, the non-exclusive, non-transf
 
 (a)	The Licensee shall only access and use Fluid:
 
-(i)	for business purposes, as disclosed to ASE; 
+	(i)	for business purposes, as disclosed to ASE; 
 
-(ii)	in accordance with the intended use of Fluid; and
+	(ii)	in accordance with the intended use of Fluid; and
 
-(iii)	in accordance with ASE’s instructions from time to time.
+	(iii)	in accordance with ASE’s instructions from time to time.
 
 
 (b)	The Licensee must not, without ASE’s prior written consent:
-(i)	use Fluid for any purpose or in any manner other than as set out in this Agreement;
+	(i)	use Fluid for any purpose or in any manner other than as set out in this Agreement;
 
-(ii)	use Fluid in any way that could damage the reputation of ASE or the goodwill or other rights associated with Fluid;
+	(ii)	use Fluid in any way that could damage the reputation of ASE or the goodwill or other rights associated with Fluid;
 
-(iii)	permit any entity that is not an Authorised User to use, access or otherwise deal with Fluid;
+	(iii)	permit any entity that is not an Authorised User to use, access or otherwise deal with Fluid;
 
-(iv)	reproduce, make error corrections or otherwise modify or adapt Fluid or create any derivative works based on Fluid;
+	(iv)	reproduce, make error corrections or otherwise modify or adapt Fluid or create any derivative works based on Fluid;
 
-(v)	resell, sublicense, distribute, allow access to or otherwise provide or make available for any purpose any component of Fluid to any person, firm or entity that is not licensed under this Agreement;
+	(v)	resell, sublicense, distribute, allow access to or otherwise provide or make available for any purpose any component of Fluid to any person, firm or entity that is not licensed under this Agreement;
 
-(vi)	attempt to disassemble, decompile, circumvent any technological measure that effectively controls access to, or reverse engineer Fluid, or otherwise engage in any conduct designed or intended to interfere with the operation of Fluid, except to the extent that such activity is expressly permitted by applicable law; or
+	(vi)	attempt to disassemble, decompile, circumvent any technological measure that effectively controls access to, or reverse engineer Fluid, or otherwise engage in any conduct designed or intended to interfere with the operation of Fluid, except to the extent that such activity is expressly permitted by applicable law; or
 
-(vii)	modify, alter, translate, reverse engineer or create derivative works based upon Fluid. 
+	(vii)	modify, alter, translate, reverse engineer or create derivative works based upon Fluid. 
 
 
-==2.3	NON-EXCLUSIVE
+*2.3	NON-EXCLUSIVE*
 
 The Licensee acknowledges that this Agreement does not grant the Licensee any exclusivity in respect of Fluid and that ASE is entitled to license Fluid to other entities in its absolute discretion. 
 
-==2.4	THIRD-PARTY APPLICATIONS AND PROVIDERS
+*2.4	THIRD-PARTY APPLICATIONS AND PROVIDERS*
 
 (a)	The Licensee acknowledges and agrees that: 
 
-(i)	in order to obtain certain functions within Fluid, the Licensee may elect to obtain a licence to Third-Party Applications;
+	(i)	in order to obtain certain functions within Fluid, the Licensee may elect to obtain a licence to Third-Party Applications;
 
-(ii)	ASE may, with the Licensee’s prior consent, sign the Licensee up to use certain Third-Party Applications;
+	(ii)	ASE may, with the Licensee’s prior consent, sign the Licensee up to use certain Third-Party Applications;
 
-(iii)	any Third-Party Applications are separate from and independent of ASE;
+	(iii)	any Third-Party Applications are separate from and independent of ASE;
 
-(iv)	the Licensee is responsible for adhering to the terms of any agreement between the Licensee and any Third-Party Provider;
+	(iv)	the Licensee is responsible for adhering to the terms of any agreement between the Licensee and any Third-Party Provider;
 
-(v)	in the event that the Licensee fails to comply with this clause, the Licensee acknowledges that the functionality of Fluid may be reduced or otherwise affected;
+	(v)	in the event that the Licensee fails to comply with this clause, the Licensee acknowledges that the functionality of Fluid may be reduced or otherwise affected;
 
-(vi)	ASE makes no representations or warranties relating to, and is not liable in relation to, Third-Party Applications, or any other product, service, internet site, or other functionality operated or supplied by Third- Party Providers or any data or information provided by any of them, including, but not limited to representations or warranties as to any Third-Party Provider's compliance with laws and representations or warranties as to site availability; and
+	(vi)	ASE makes no representations or warranties relating to, and is not liable in relation to, Third-Party Applications, or any other product, service, internet site, or other functionality operated or supplied by Third- Party Providers or any data or information provided by any of them, including, but not limited to representations or warranties as to any Third-Party Provider's compliance with laws and representations or warranties as to site availability; and
 
-(vii)	such Third-Party Providers and ASE are not partners, representatives or agents of each other.
+	(vii)	such Third-Party Providers and ASE are not partners, representatives or agents of each other.
 
 (b)	In no event shall ASE be responsible for any information contained in a Third-Party Application, including without limitation, its formatting, screening or display of data, or for the Licensee's use of or inability to use such Third-Party Application. 
 
 (c)	ASE and its Third-Party Licensors make no representations or warranties regarding:
 
-(i)	the availability or timing of any availability of any interface between Fluid and any third-party software and/or systems (including the Third-Party Applications); and
+	(i)	the availability or timing of any availability of any interface between Fluid and any third-party software and/or systems (including the Third-Party Applications); and
 
-(ii)	the availability of or access to or by any specific provider of third-party software and/or systems (including the Third-Party Applications).
+	(ii)	the availability of or access to or by any specific provider of third-party software and/or systems (including the Third-Party Applications).
 
 
 (d)	The Licensee acknowledges and agrees that:
 
-(i)	in the event that the Third-Party Application is no longer available to be interfaced with Fluid, the functionality, speed or other characteristic of Fluid may be reduced or otherwise affected; and
+	(i)	in the event that the Third-Party Application is no longer available to be interfaced with Fluid, the functionality, speed or other characteristic of Fluid may be reduced or otherwise affected; and
 
-(ii)	ASE and its Third-Party Licensors will in no way be responsible for any Losses that may result from the Licensee's use of any Third-Party Application, despite the fact that any such Third-Party Application may interface with Fluid, or that ASE may have provided installation or integration services with respect to the same. 
+	(ii)	ASE and its Third-Party Licensors will in no way be responsible for any Losses that may result from the Licensee's use of any Third-Party Application, despite the fact that any such Third-Party Application may interface with Fluid, or that ASE may have provided installation or integration services with respect to the same. 
 
 ==3.	LICENSEE OBLIGATIONS
 
-==3.1	AUTHORISED USERS AND NAMED USER LICENCES 
+*3.1	AUTHORISED USERS AND NAMED USER LICENCES*
 
 (a)	The Licensee acknowledges that one (1) Named User Licence must only be used by one (1) Authorised User.
 
@@ -143,57 +143,56 @@ The Licensee acknowledges that this Agreement does not grant the Licensee any ex
 (c)	The Licensee represents and warrants that it is authorised to receive an Named User Licence and access and use Fluid, and possesses all licenses, certifications and other authorisations, whether required by applicable law or otherwise, to effect the transactions for which the Licensee accesses and uses Fluid.
 
 	
-==3.2	INTELLECTUAL PROPERTY
+*3.2	INTELLECTUAL PROPERTY*
 (a)	ASE remains the owner or licensee of any Intellectual Property created or developed as a result of the use of the License granted in this Agreement, and the Licensee must take all reasonable actions to protect the Intellectual Property rights comprised in Fluid. 
 
 (b)	The Licensee will not use, replicate, or modify ASE’s Intellectual Property save for the express purpose of using Fluid for its intended purpose only pursuant to this Agreement.
 
 
-==3.3	PERFORMANCE INCIDENT REPORTING AND AUDIT RIGHTS
+*3.3	PERFORMANCE INCIDENT REPORTING AND AUDIT RIGHTS*
 
 (a)	The Licensee agrees to provide ASE with data, documentation or other such evidence of Performance Incident(s) that it experiences during the term of the Agreement promptly upon becoming aware of such Performance Incident(s). 
 
 (b)	ASE shall have the right, upon reasonable notice to Licensee, to audit the Licensee's use of Fluid (by means of remote access or through entry to the Licensee's premises), and Licensee agrees to allow ASE or its representatives access to such systems, facilities, books and records as are reasonably required to audit the Licensee's compliance with the Agreement. 
 
-==3.4	COMPLIANCE WITH LAW
+*3.4	COMPLIANCE WITH LAW*
 
 (a)	Both parties will use their best endeavours to ensure compliance with: 
 
-(i)	all federal, state and local laws, rules, and regulations applicable to its activities in connection with which Fluid, and any data generated by, submitted to or evaluated utilising Fluid; and 
+	(i)	all federal, state and local laws, rules, and regulations applicable to its activities in connection with which Fluid, and any data generated by, submitted to or evaluated utilising Fluid; and 
 
-(ii)	all applicable laws, rules, regulations and conventions relating to data privacy, data security, international communications, communications decency and the importation and exportation of software and data. 
+	(ii)	all applicable laws, rules, regulations and conventions relating to data privacy, data security, international communications, communications decency and the importation and exportation of software and data. 
 
 
 ==4.	TERMINATION
 
-==4.1	BREACH BY LICENSEE
+*4.1	BREACH BY LICENSEE*
 	
 ASE may terminate this Agreement in the event that the Licensee has breached a term of this Agreement that is not a reason referred to in Clause 4.2, and the Licensee has failed to rectify the breach within seven 7 of receiving written notice from ASE.
 
 
-==4.2	SPECIAL CIRCUMSTANCES
+*4.2	SPECIAL CIRCUMSTANCES*
 	
 ASE may terminate the Agreement, effective immediately, in the event: 
 
-(i)	of any suspected breach of the Licensee’s obligations in this Agreement relating to ASE’s Intellectual Property;
+	(i)	of any suspected breach of the Licensee’s obligations in this Agreement relating to ASE’s Intellectual Property;
 
-(ii)	if the License Fee has not been paid; 
+	(ii)	if the License Fee has not been paid; 
 
-(iii)	any other agreement which refers to this EULA has been breached; and
+	(iii)	any other agreement which refers to this EULA has been breached; and
 
-(iv)	the Software Collaboration is no longer in operation.
+	(iv)	the Software Collaboration is no longer in operation.
 
 
-
-==4.3	UPON TERMINATION OR EXPIRATION
+*4.3	UPON TERMINATION OR EXPIRATION*
 
 (a)	Upon termination or expiration of this Agreement, the Licensee must: 
 
-(i)	immediately cease accessing and using Fluid; 
+	(i)	immediately cease accessing and using Fluid; 
 
-(ii)	return to ASE, or destroy if requested by ASE, at the Licensee’s expense, all materials associated with ASE’s Intellectual Property and the Confidential Information, including, but not limited to, Fluid, the Documentation, marketing materials, stationery and signage; and
+	(ii)	return to ASE, or destroy if requested by ASE, at the Licensee’s expense, all materials associated with ASE’s Intellectual Property and the Confidential Information, including, but not limited to, Fluid, the Documentation, marketing materials, stationery and signage; and
 
-(iii)	continue to comply with the continuing obligations under this Agreement. 
+	(iii)	continue to comply with the continuing obligations under this Agreement. 
 
 (b)	Upon request from ASE, the Licensee shall provide ASE with prompt written certification of its compliance with this clause, executed by a duly authorised officer of the Licensee. 
 
@@ -201,53 +200,53 @@ ASE may terminate the Agreement, effective immediately, in the event:
 
 (a)	Notwithstanding the remainder of this Agreement, the Licensee shall indemnify and hold harmless ASE, the Group and its officers, employees and directors,  from and against any all claims, demands, Losses, damages, proceedings, compensation, Costs, charges, expenses and liabilities which may arise in respect of: 
 
-(i)	the Licensee's use of Fluid (except to the extent that it can be proven by the Licensee that the loss or damage was caused by the negligence or gross wilful omission of ASE); 
+	(i)	the Licensee's use of Fluid (except to the extent that it can be proven by the Licensee that the loss or damage was caused by the negligence or gross wilful omission of ASE); 
 
-(ii)	any fraudulent or unlawful acts or omissions of the Licensee in connection with the Agreement or Fluid (except to the extent that ASE or its Third-Party Licensors caused such Losses); and/or
+	(ii)	any fraudulent or unlawful acts or omissions of the Licensee in connection with the Agreement or Fluid (except to the extent that ASE or its Third-Party Licensors caused such Losses); and/or
 
-(iii)	any breach of any Intellectual Property clauses of this Agreement.
+	(iii)	any breach of any Intellectual Property clauses of this Agreement.
 
 ==6.	LIABILITY AND WARRANTIES
 
-==6.1	DISCLAIMER 
+*6.1	DISCLAIMER*
 
 (a)	Notwithstanding anything herein to the contrary, ASE specifically does not warrant that: 
 
-(i)	Fluid or any components thereof will perform without interruption or error, or that all Performance Incidents will be corrected;
+	(i)	Fluid or any components thereof will perform without interruption or error, or that all Performance Incidents will be corrected;
 
-(ii)	Fluid (including the data and other information contained therein) will meet the Licensee's requirements; 
+	(ii)	Fluid (including the data and other information contained therein) will meet the Licensee's requirements; 
 
-(iii)	Fluid will operate in the configuration which the Licensee may select for use; or 
+	(iii)	Fluid will operate in the configuration which the Licensee may select for use; or 
 
-(iv)	data or other information generated by or contained in Fluid will be accurate or complete. 
+	(iv)	data or other information generated by or contained in Fluid will be accurate or complete. 
 
 (b)	The Licensee agrees that ASE shall not be liable for:
 
-(i)	the accurate or complete transmission of data or other materials; 
+	(i)	the accurate or complete transmission of data or other materials; 
 
-(ii)	any disruption, interference with, or interruption to, the Licensee’s access to Fluid;
+	(ii)	any disruption, interference with, or interruption to, the Licensee’s access to Fluid;
 
-(iii)	any corruption or loss of the Licensee’s Intellectual Property, which is at the Licensee’s risk at all times; 
+	(iii)	any corruption or loss of the Licensee’s Intellectual Property, which is at the Licensee’s risk at all times; 
 
-(iv)	any Losses which the Licensee has suffered or may suffer in relation to ASE exercising its rights under this Agreement, including but not limited to pursuant to clause 10;
+	(iv)	any Losses which the Licensee has suffered or may suffer in relation to ASE exercising its rights under this Agreement, including but not limited to pursuant to clause 10;
 
-(v)	any irregularities, errors, problems or defects arising from: 
+	(v)	any irregularities, errors, problems or defects arising from: 
 
-(A)	failure of Licensee to provide a suitable installation and operating environment, including but not limited to, failure to use supplies, materials, software and hardware platforms that meet the specifications set forth in the Documentation; 
+		(A)	failure of Licensee to provide a suitable installation and operating environment, including but not limited to, failure to use supplies, materials, software and hardware platforms that meet the specifications set forth in the Documentation; 
 
-(B)	the Licensee's incorporation, attachment or engagement of any attachment, feature, program or device to Fluid; 
+		(B)	the Licensee's incorporation, attachment or engagement of any attachment, feature, program or device to Fluid; 
 
-(C)	use of Fluid outside the scope of its intended purpose, as described in the User Manual or ASE’s directions from time to time; or 
+		(C)	use of Fluid outside the scope of its intended purpose, as described in the User Manual or ASE’s directions from time to time; or 
 
-(D)	the Licensee's failure to incorporate any update in usage instructions, as set out in the User Manual or otherwise, as specified previously released by ASE that corrects such item. 
+		(D)	the Licensee's failure to incorporate any update in usage instructions, as set out in the User Manual or otherwise, as specified previously released by ASE that corrects such item. 
 
 (c)	ASE reserves the right to: 
 
-(i)	modify Fluid or substitute any materials contained therein so long as the new materials do not materially affect the functionality of Fluid; and 
+	(i)	modify Fluid or substitute any materials contained therein so long as the new materials do not materially affect the functionality of Fluid; and 
 
-(ii)	discontinue the licensing and/or support of Fluid. 
+	(ii)	discontinue the licensing and/or support of Fluid. 
 	
-==6.2	LIMITATION
+*6.2	LIMITATION*
 	
 (a)	In no event shall ASE or its respective affiliates, partners, officers, employees, directors, agents, contractors, representatives, successors or assigns, as such, be liable to the Licensee or anyone claiming under or through the Licensee, for any punitive, exemplary, incidental, indirect, or special damages, or consequential loss, based on, arising out of or in connection with this Agreement, or any matter relating to this Agreement, or error in information (whether negligent or not) supplied before or after the date of this Agreement in connection with its subject matter, whether based on contract, tort (including but without limitation negligence), or any other legal or equitable grounds, even if ASE knew or ought to have known of the possibility of such damages or consequential loss. ‘Consequential loss’ shall include but not be limited to loss of profits, interest revenue, use, or goodwill (or similar financial loss), loss of data, business interruption, or payments made or due to any third party.
 
