@@ -63,12 +63,12 @@ This Agreement is between ANDREW SJOQUIST ENTERPRISES PTY LTD ABN 99 095 082 492
 
 
 == 2. LICENCE
-== 2.1 GRANT
+*2.1 GRANT*
 
 ASE grants the Licensee, and the Licensee accepts, the non-exclusive, non-transferable right to access and use Fluid subject to the terms of this Agreement and subject to payment of the License Fee.
 
 	
-==2.2	SCOPE AND RESTRICTIONS
+*2.2	SCOPE AND RESTRICTIONS*
 
 (a)	The Licensee shall only access and use Fluid:
 
