@@ -1,1 +1,162 @@
+---
+sidebar: sidebar
+permalink: eula_fluid.html
+keywords: network, connection, connectivity, kubernetes, baremetal, bare metal, bare-metal, hybrid cloud, megaport, pccw, console connect, equinix, fabric
+summary: FLUID is an orchestration and automation service, integrated with Cloud Manager, that deploys bare metal kubernetes clusters and provides network connectivity to connect public, private and on-premises cloud infrastructures to create ture hybrid cloud architectures. FLUID builds the network connectivity from anywhere to anywhere seemlessly by configuring network switches, elastic cross connects and cloud provider networking APIs. FLUID can automatically build bare-metal kubernetes clusters on any compute hardware (or in virtual machines), ready for NetApp data services and other containers and virtual machine workloads to be deployed by users. FLUID can replace VMware where virtual machines are required.
+---
 
+= End User License Agreement
+== Fluid
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Please read this End User License Agreement (“this Agreement”) carefully before clicking the “I agree” button below.  By clicking the “I agree” button, you are agreeing to be bound by the terms of this Agreement.  If you do not agree with the terms of this Agreement, please do not click “I agree” and instead contact us to notices@fluidhq.io 
+
+This Agreement is between ANDREW SJOQUIST ENTERPRISES PTY LTD ABN 99 095 082 492 of Suite 301, 44 Hampden Road, Artarmon in the State of New South Wales (“ASE”) and you (“the Licensee”).  ASE owns FLUID, and agrees to grant to the Licensee the non-exclusive, non-transferable right to use Fluid, in accordance with the terms and conditions contained in this Agreement. 
+
+
+== 1.1  Definitions
+
+(1)	Authorised User means any person that has been issued an Named User Licence by ASE;
+
+(2)	Commencement Date means the earlier of:
+
+(i)	the date specified in the Schedule; or
+
+(ii)	the date when ASE first provides the Licensee with access to any part of Fluid, pursuant to the terms of this Agreement,
+
+
+(3)	Documentation means any documents, templates and/or reports that are supplied by ASE in relation to Fluid; 
+
+(4)	Fluid means the software toolset that acts as the networking layer between NetApp (or such other third party resource) and public and private cloud;
+
+(5)	Group means ASE and all its Related Entities and Associates (as those terms are defined in the Corporations Act 2001 (Cth);
+
+(6)	Intellectual Property means all intellectual property rights, which arise by operation of contract, legislation, common law or equity, and which includes, but is not limited to trade marks, copyright, patents, patents pending, know how, trade secrets, names of domains, products, brands and services, moral rights, designs, inventions, internet sites and software (and in the case of ASE includes Fluid and the Documentation) 
+
+(7)	Licence Fee means all fees charged in accordance with any other Agreement which refers to this End User License Agreement. 
+
+(8)	Losses means any liabilities, claims, actions, suits, proceedings, judgments, losses, damages, costs and expenses which arise from this Agreement, but excludes legal and other expenses incurred in connection with a claim for which one party seeks indemnification from the other;
+
+(9)	Named User Licence means the username and password (or other means of authentication provided by ASE from time to time) to enable access to Fluid; 
+
+(10)	Performance Incident means: 
+
+(i)	any irregularity, error, problem or defect resulting from an incorrect functioning of Fluid if such irregularity, error, problem or defect renders Fluid incapable of meeting the material specifications causes incorrect functions to occur; or
+
+(ii)	an incorrect or incomplete identification, statement, representation or diagram in the Documentation that causes the Documentation to be inaccurate or incomplete in any material respect; 
+
+
+(11)	Software Collaboration means the integration of Fluid with NetApp and any other open-source software such as [INSERT DETAILS];
+
+(12)	Third-Party Application means any product, service, system, application and/or internet site integrated or interfaced with Fluid that is owned or operated by a Third-Party Provider; 
+
+(13)	Third-Party Licensor means any third party that licenses or otherwise conveys to ASE the right to use, distribute or make available any component of Fluid or any other data, services, software or other materials; 
+
+(14)	Third-Party Provider means any third party that provides support, business, technology and/or other products or services which may be used in conjunction with Fluid; and
+
+(15)	User Manual means written guidelines and/or instructions relating to Fluid.
+
+
+== Supported working environments and hardware
+
+FLUID can be deployed onto the following hardware, and supports the following virtual cross connect and cloud providers:
+
+* Mellanox switches
+* Any x86 compute hardware
+* Any virtual compute hardware
+* Console Connect by PCCW Global
+* Megaport
+* Equinix Fabric (formerly Equinix Cloud Exchange)
+* Amazon Web Services (AWS)
+* Azure
+* Google Cloud Platform (GCP)
+
+NOTE: A Beta version released in April 2021 allows you to run FLUID free on on premises hardware.
+
+== Cost
+
+* The cost to use FLUID depends on the number of nodes you have in your deployment. A node is defined as a compute, switch or network function virtualisation (NFV) device. A subscription is required to deploy FLUID and connect the deployed clusters to Cloud Manager. See https://cloud.fluidhq.io/pricing[pricing^] for details.
++
+link:task_deploy_cloud_compliance.html#subscribing-to-the-cloud-compliance-service[Learn how to subscribe^].
++
+*Note:* This subscription is not needed during the Beta version period.
+
+* Installing FLUID requires deploying the FLUID operating system to compute and network hardware, which is procured by the user. See the <<The Cloud Compliance instance,the type of instance that is deployed for each cloud provider>>.
+
+* FLUID does not require a connector or virtual cross connect providers for the control plane. An internet connection is sufficient for the FLUID control plane to connect to the FLUID cloud service and Cloud Manager. The control plane connection between FLUID cluster, the FLUID cloud services and Cloud Manager is served over HTTPS, and the private data sent between components are secured with end-to-end encryption, which means NetApp and third parties can’t read it. See the link:reference_cloud_mgr_reqs.html[type of instance that is deployed for each cloud provider^].
+
+== How FLUID works
+
+At a high-level, FLUID works like this:
+
+. You deploy FLUID operating system on network switches and/or compute hardware using downloads ISO files, pre-packaged ONIE installer URL or PXE booting compute nodes connected to switches running FLUID.
+. The devices automatically form a cluster and register themselves with the FLUID cloud service.
+. You obtain a Cloud Adoption Token from the console of any device in the cluster - switch node or compute node.
+. You click *Clusters* tab and use the Cloud Adoption Token to claim your cluster within *FLUID* in Cloud Manager.
+. You manage your baremetal kubernetes cluster using your preferred kubernetes management tool by retrieve the *kubeconfig* from within the *Cluster info*
+. Optionally, you configure and build your datacentre and/or cloud connectivity cricutis from the *Network* tab within *FLUID* in Cloud Manager.
+
+== The FLUID cluster instance
+
+When you deploy FLUID, the installer deploys the instance in the same subnet as XXXXX. link:concept_connectors.html[Learn more about Connectors.^]
+
+NOTE: If the subnetting of the deployment is required to be altered, this can be achieve by XXXXX.
+
+image:diagram_cloud_compliance_instance.png[A diagram that shows a Cloud Manager instance and a Cloud Compliance instance running in your cloud provider.]
+
+Note the following about the instance:
+
+* FLUID initially deploys a single node, single master, Kubernetes cluster to manage the deployment
+
+* FLUID is designed to be deployed on bare-metal hardware outside of a cloud provider. It can however also be deployed in virtualised environments and inside cloud provider if necessary. Support for hardware as a service providers like Equinix Metal (formerly Packet) and Google Bare Metal servers are expected in calendar H2Y21.
+
+* Additional compute and network nodes can be deployed by attaching the compute nodes to the existing network switch running FLUID 
+
+* Only one FLUID instance is deployed per cluster and only one cluster per FLUID instance. Today, multiple clusters/instances cannot be connected to each other but this feature is coming soon.
+
+* Upgrades of FLUID software is automated--you don't need to worry about it.
+
+== Networking overview
+
+FLUID deploys its own layer 3 network stack to the datacentre/edge network switches and provides automated orchestration of connections to the public clouds and between deployment instances.
+
+In keeping with modern day best practise, layer 2 networking concepts such as spanning tree and VLANs are not part of the FLUID network stack. This ensures that environments behave like a public cloud vendor and can scale easily and quickly as required.
+
+Various cloud-like networking features such as the ability to create a load balancer for a service in Kubernetes is included in FLUID as well as Access Control Lists (ACLs) and Network Address Translation (NAT) rules and BGP routing capability.
+
+Internet access is needed to install and upgrade the FLUID software and to send usage metrics.
+
+If you have strict networking requirements, link:task_deploy_fluid.html#reviewing-prerequisites[learn about the endpoints that FLUID contacts^].
+
+== How cloud connnections work
+
+After you deploy a FLUID instance it immediately calls home securely via an internet connection to the FLUID cloud service to obtain a unique Cloud Adoption Token (CAT). The Cluster Adoption Token is displayed on the console screen of any nodes in the cluster.
+
+Once the instance of FLUID is claimed in Cloud Manager using the CAT, configuration of network connections can be peformed as follows:
+
+. You click *Clusters* tab and use the Cloud Adoption Token to claim your cluster within *FLUID* in Cloud Manager.
+. You manage your baremetal kubernetes cluster using your preferred kubernetes management tool by retrieve the *kubeconfig* from within the *Cluster info*
+. Optionally, you configure and build your datacentre and/or cloud connectivity cricutis from the *Network* tab within *FLUID* in Cloud Manager.
+
+image:diagram_cloud_compliance_scan.png[A diagram that shows a Cloud Manager instance and a Cloud Compliance instance running in your cloud provider. The Cloud Compliance instance connects to NFS and CIFS volumes, S3 buckets, and databases to scan them.]
+
+After the initial scan, Cloud Compliance continuously scans your data to detect incremental changes (this is why it's important to keep the instance running).
+
+You can enable and disable scans at the link:task_getting_started_compliance.html#enabling-and-disabling-compliance-scans-on-volumes[volume level^], at the link:task_scanning_s3.html#enabling-and-disabling-compliance-scans-on-s3-buckets[bucket level^], the link:task_scanning_databases.html#enabling-and-disabling-compliance-scans-on-database-schemas[database schema level^], and at the link:task_scanning_onedrive.html#adding-onedrive-users-to-compliance-scans[OneDrive user level^].
+
+== User access to compliance information
+
+The role each user has been assigned provides different capabilities within Cloud Manager and within Cloud Compliance:
+
+* *Account Admins* can manage compliance settings and view compliance information for all working environments.
+
+* *Workspace Admins* can manage compliance settings and view compliance information only for systems that they have permissions to access. If a Workspace Admin can't access a working environment in Cloud Manager, then they can't see any compliance information for the working environment in the Compliance tab.
+
+* Users with the *Cloud Compliance Viewer* role can only view compliance information and generate reports for systems that they have permission to access. These users cannot enable/disable scanning of volumes, buckets, or database schemas.
+
+link:reference_user_roles.html[Learn more about Cloud Manager roles^] and how to link:task_managing_cloud_central_accounts.html#adding-users[add users with specific roles^].
